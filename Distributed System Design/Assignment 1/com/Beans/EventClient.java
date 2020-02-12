@@ -26,5 +26,10 @@ public class EventClient {
 	}
 	public void setBookedEventId(ArrayList<String> bookedEventId) {
 		this.bookedEventId = bookedEventId;
-	} 
+	}
+	@Override
+	public String toString() {
+	// TODO Auto-generated method stub
+	return "Client id"+clientId+"; Client Type "+clientType +" Booked Event id "+ bookedEventId.toString();
+	}
 }

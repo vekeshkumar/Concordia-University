@@ -6,18 +6,24 @@ import java.net.DatagramSocket;
 import java.net.InetAddress;
 import java.net.SocketException;
 
-public class UDPIntReqClient {
+public class UDPIntReqClient extends Thread {
 		private String  listEventAvailability;
 		private ServerImplementation serverImp;
 		
 		public UDPIntReqClient(ServerImplementation serIp) {
 			this.serverImp = serIp;
 		}
+		public String getRemoteListDetails() {
+			// TODO Auto-generated method stub
+			return listEventAvailability;
+		}
+		
+		@Override
 		public void run() {
 			DatagramSocket socket = null;
 			try {
 				socket = new DatagramSocket();
-				byte[] data = listEventAvailability.getBytes();
+				byte[] data = "GET_EVENT_LIST".getBytes();
 				System.out.println(serverImp.location);
 				DatagramPacket  packet = new DatagramPacket(data, data.length, InetAddress.getByName(serverImp.IPAddress), serverImp.udpServer.portNumUDP);
 				socket.send(packet);
@@ -34,5 +40,8 @@ public class UDPIntReqClient {
 	            }
 	        }
 		}
+	
+		
+		
 
 }

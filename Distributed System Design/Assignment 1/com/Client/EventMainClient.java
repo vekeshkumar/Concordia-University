@@ -44,7 +44,6 @@ public class EventMainClient {
 							//Access the MTL server
 							System.out.println("Accessing the MTL server location");
 							client  = new ClientImplementation(ServerCenterLocation.MTL,clientId); 
-							System.out.println(client.toString());
 							break;
 						case "QUE":
 							System.out.println("Accessing the QUE server location");
@@ -57,13 +56,15 @@ public class EventMainClient {
 						default:
 							System.out.println("Please enter the correct ClientId!");
 							break;
-						
 					}
 
 					//Two switch case for Manager and Customer
 					if(clientType.equalsIgnoreCase("c") || clientType.equalsIgnoreCase("m")) {
 						if(clientType.equalsIgnoreCase("c")) {
 							int t=1;
+							String eventId = null;
+							String eventType = null;
+							String msg = null;
 							while(t!=0) {
 								System.out.println("1.Book Event");
 								System.out.println("2.Get Event Schedule");
@@ -75,12 +76,22 @@ public class EventMainClient {
 									case 1:
 										//Get all the input Required.
 										System.out.println("Enter event Id and event type");
+										 eventId = br.readLine();
+										 eventType= br.readLine();
+										msg = client.bookEvent(clientId, eventId, eventType);
+										System.out.println(msg);
 										break;
 									case 2:
 										//ClientId is enough Display the List
+										msg = client.getBookingSchedule(clientId);
+										System.out.println(msg);
 										break;
 									case 3:
 										System.out.println("Enter event Id and event type");
+										 eventId = br.readLine();
+										 eventType= br.readLine();
+										msg = client.bookEvent(clientId, eventId, eventType);
+										System.out.println(msg);
 										break;
 									case 4:
 										 t =0;
@@ -95,6 +106,8 @@ public class EventMainClient {
 					}
 						else {
 							int t=1;
+							String eventId = null;
+							String eventType = null;
 							while(t!=0) {
 								System.out.println("1.Add Event");
 								System.out.println("2.Remove Event");
@@ -103,20 +116,46 @@ public class EventMainClient {
 								Integer option = Integer.parseInt(br.readLine());
 								switch (option) {
 									case 1:
-										System.out.println("Please enter EventID- MTLE1002220, Booking Capacity eg. 10");										
-										String eventId = br.readLine();
-										String eventType = br.readLine();
-										int bookingCapacity = Integer.parseInt(br.readLine());
-										System.out.println(eventId+" "+eventType+" "+bookingCapacity);
-										client.addEvent(eventId, eventType, bookingCapacity);
+										System.out.println("Please enter the following:");										
+										System.out.println("1.Event Id: MTL/SHE/QUE -Location,M/A/E-Timing, 102220 -Date");
+										 eventId = br.readLine();
+										System.out.println("2.Event Type: Conference/Seminar/Trade Show");
+										 eventType = br.readLine();
+										System.out.println("3.BookingCapacity :");
+										int bookingCapacity = Integer.parseInt(br.readLine());	
 										
+										if(client!=null) {
+											if(eventId.length()==10) 
+												{
+													if(checkEventIdValidation(eventId,clientId)) {
+														if(locName.equalsIgnoreCase(eventId.substring(0, 3))) {
+															String msg = client.addEvent(eventId, eventType, bookingCapacity);
+															System.out.println("Message from the server:-"+msg);
+														}else {
+															System.out.println("Event can be added only to your server");
+														}
+													}
+												
+												}
+											else
+												System.out.println("Please check your Event id format and re-enter it again");
+										}
 										break;
 									case 2:
+										System.out.println("Enter the event id and type to remove");
+										eventId = br.readLine();
+										eventType= br.readLine();
+										String msgResult = client.removeEvent(eventId,eventType);
+										System.out.println("Message from the server:-"+msgResult);
 										break;
 									case 3:
+										System.out.println("Enter the event type to know the availability");
+										eventType = br.readLine();
+										String eventListString = client.listEventAvailability(eventType);
+										System.out.println(eventListString);
 										break;
 									case 4:
-										 t =0;
+										 t=0;
 										 System.out.println("Logged out Successfully");
 									 break;
 			
@@ -130,12 +169,22 @@ public class EventMainClient {
 											
 				}else  
 					System.out.println("Please enter a valid clientId");
-					
 				}
-			
 		}
-
 	}	
+	public static boolean checkEventIdValidation(String eventId, String clientId) {
+		boolean isValidEveId =false;
+		Pattern eventPattern = Pattern.compile("([A-Z]{1,3})([M,A,E]{1})([0-9]{5,6})");
+		if(eventId.substring(0, 2).equalsIgnoreCase(clientId.substring(0,2))) {
+			Matcher eventIdPattern = eventPattern.matcher(eventId);
+			if(eventIdPattern.matches()) {
+				isValidEveId = true;
+			}else {
+				System.out.println("Please check your Event id format and re-enter it again");
+			}
+		}
+		return isValidEveId;
+	}
 	
 	
 	

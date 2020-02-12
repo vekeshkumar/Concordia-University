@@ -60,5 +60,9 @@ public class Event implements Serializable {
 		this.bookingTime = bookingTime;
 	}
 	
-	
+	@Override
+	public String toString() {
+		// TODO Auto-generated method stub
+		return "Event Id="+eventId+"Event Type="+eventType+",Event Capacity"+bookingCapacity;
+	}
 }

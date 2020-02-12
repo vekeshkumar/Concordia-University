@@ -18,13 +18,13 @@ public class ClientImplementation {
 	static Registry registryQUE;
 	static Registry registrySHE;
 	
-	ICentralizedServer iCenterServer;
+	ICentralizedServer iCenterServer = null;
 	//Get the port registered from the registry
 		static {
 			try {
 				registryMTL = LocateRegistry.getRegistry("localhost", com.Config.Constants.RMI_PORT_NO_MTL);
 				registryQUE = LocateRegistry.getRegistry("localhost", com.Config.Constants.RMI_PORT_NO_QUE);
-				registrySHE = LocateRegistry.getRegistry("localhost", com.Config.Constants.RMI_PORT_NO_QUE);
+				registrySHE = LocateRegistry.getRegistry("localhost", com.Config.Constants.RMI_PORT_NO_SHE);
 			} catch (RemoteException e) {
 				e.printStackTrace();
 			}
@@ -34,13 +34,13 @@ public class ClientImplementation {
 	//Mapping the client instance to the associated server based on the location
 	ClientImplementation(ServerCenterLocation loc, String clientId) throws AccessException, RemoteException, NotBoundException{
 		if(loc.equals(ServerCenterLocation.MTL)) {
-			ICentralizedServer iCenterServer = (ICentralizedServer)registryMTL.lookup(loc.toString());
+			 iCenterServer = (ICentralizedServer)registryMTL.lookup(loc.toString());
 			
 		}else if(loc.equals(ServerCenterLocation.QUE)) {
-			ICentralizedServer iCenterServer = (ICentralizedServer)registryQUE.lookup(loc.toString());
+			 iCenterServer = (ICentralizedServer)registryQUE.lookup(loc.toString());
 		}
 		else if(loc.equals(ServerCenterLocation.SHE)) {
-			ICentralizedServer iCenterServer = (ICentralizedServer)registrySHE.lookup(loc.toString());
+			 iCenterServer = (ICentralizedServer)registrySHE.lookup(loc.toString());
 		}
 	}
 	
@@ -50,35 +50,85 @@ public class ClientImplementation {
 		Event eventDetails = new  Event();
 		eventDetails.setId(eventId);
 		eventDetails.setEventType(eventType);
-		eventDetails.setBookingCapacity(bookingCapacity);
-		
-		try {
-			System.out.println(eventDetails.toString());
-			iCenterServer.addEvent(eventId, eventType, bookingCapacity);
+		eventDetails.setBookingCapacity(bookingCapacity);		
+		try {		
+			if(iCenterServer!=null) {				
+				msgResult = iCenterServer.addEvent(eventId, eventType, bookingCapacity);
+			}			
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
-		if(eventId!=null)
-			msgResult ="Event details added";
-		else
+		if(eventId==null)
 			msgResult = "There is an error in event creation details";
 		return msgResult;
 		
 	}
 	
 	public String removeEvent(String eventId, String eventType) {
-		String msgResult = null;
+		String msgResult = "Error";
 		try {
-			iCenterServer.removeEvent(eventId, eventType);
+			if(iCenterServer!=null) {	
+				iCenterServer.removeEvent(eventId, eventType);
+			}
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
-		}
-		msgResult = "Event is successfully removed from the server";		
+		}	
+		return msgResult;
+	}
+	public String listEventAvailability(String eventType) {
+		String msgResult = "Not Available";
+		try {
+			msgResult = iCenterServer.listEventAvailability(eventType);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+		return msgResult;
+	}
+	
+	public String bookEvent(String customerId,String eventId, String eventType) {
+		String msgResult = null;
+		try {
+			msgResult = iCenterServer.bookEvent(customerId,eventId,eventType);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+		return msgResult;
+	}
+
+	public String getBookingSchedule(String customerId) {
+		String msgResult = null;
+		try {
+			msgResult = iCenterServer.getBookingSchedule(customerId);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
+		return msgResult;
+	}
+	public String cancelEvent(String customerId,String eventId, String eventType) {
+		String msgResult = null;
+		try {
+			msgResult = iCenterServer.cancelEvent(customerId,eventId,eventType);
+		} catch (RemoteException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}		
 		return msgResult;
 	}
 	
 	
-	
+
+	/*/Java7 Diamond Notation
+	Map<ArrayList, Map<String, Integer>> nestedMap = new HashMap<>();
+
+	//get nested map 
+	Map<String, Integer> innerMap = nestedMap.get(some_key_value_string);
+
+	//now get the Integer value from the innerMap
+	Integer innerMapValue = innerMap.get(some_key_value_string);*/
+
 }

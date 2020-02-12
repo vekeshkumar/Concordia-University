@@ -67,11 +67,12 @@ public class EventMainServer   {
 			registryQUE = LocateRegistry.createRegistry(com.Config.Constants.RMI_PORT_NO_QUE);
 			registrySHE = LocateRegistry.createRegistry(com.Config.Constants.RMI_PORT_NO_SHE);
 			
-			registryMTL.rebind("MTL", stubMTL);
-			registryQUE.rebind("QUE", stubQUE);
-			registrySHE.rebind("SHE", stubSHE);
-		} catch (RemoteException e) {
+			registryMTL.bind("MTL", stubMTL);
+			registryQUE.bind("QUE", stubQUE);
+			registrySHE.bind("SHE", stubSHE);
+		}catch (Exception e) {
 			e.printStackTrace();
 		}
+		
 	}
 }

@@ -8,7 +8,6 @@ import com.Beans.Event;
 public interface ICentralizedServer extends Remote {
 	//Operations performed by Event Managers
 	public String addEvent(String eventID, String eventType, int bookingCapactiy) throws RemoteException;	
-	public String addEvent(Event event) throws RemoteException;
 	public String removeEvent(String eventID, String eventType) throws RemoteException;
 	public String listEventAvailability(String eventType) throws RemoteException;
 	
@@ -16,6 +15,8 @@ public interface ICentralizedServer extends Remote {
 	public String bookEvent(String customerID,String eventID, String eventType) throws RemoteException;
 	public String getBookingSchedule(String customerID) throws RemoteException;
 	public String cancelEvent(String customerID, String eventID,String eventType) throws RemoteException;
+	
+	public String checkEventExists(String eventID, String eventType) throws RemoteException;
 	
 	
 }

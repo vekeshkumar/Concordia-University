@@ -15,7 +15,7 @@ public class UDPServer extends Thread{
 	int portNumUDP;
 	ServerImplementation serverImpl;	
 	ServerCenterLocation scLocation;
-	int recordCount;
+	String recordDetails;
 	
 	public UDPServer(ServerCenterLocation scloc, ServerImplementation serverImp){
 		scLocation = scloc;
@@ -34,7 +34,6 @@ public class UDPServer extends Thread{
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_SHE);
 				 portNumUDP = com.Config.Constants.UDP_PORT_NO_SHE;
 				break;
-				
 			}
 			
 		} catch (IOException io) {
@@ -42,7 +41,7 @@ public class UDPServer extends Thread{
 		}
 	}
 
-
+		@Override
 		public void run() {
 			byte[] receiveData;
 			while (true) {
@@ -52,9 +51,9 @@ public class UDPServer extends Thread{
 					serverSocket.receive(receivePacket);
 					System.out.println("Received Packet:"+new String(receivePacket.getData()));
 					
-					String inputPckt = new String(receivePacket.getData());
+					String inputPckt = new String(receivePacket.getData()).trim();
 					new UDPIntReqServer(receivePacket, serverImpl).start();
-					
+					System.out.println(inputPckt);
 				} catch (Exception e) {
 					// TODO: handle exception
 				}
