@@ -1,6 +1,8 @@
 package com.Server;
 import java.util.*;
+import java.util.logging.Level;
 
+import com.Config.LogManager;
 import com.Config.ServerCenterLocation;
 
 import java.io.*;
@@ -23,6 +25,8 @@ public class EventMainServer   {
 		 initiate();
 		 createRemoteObjects();
 		 registerServersToRMI();
+		 LogManager logManager = new LogManager("ServerMain");
+		 logManager.logger.log(Level.INFO, "Server Ready! Listening on port :: " + com.Config.Constants.RMI_PORT_NO_MTL);
 		 System.out.println("Server started for "+ServerCenterLocation.MTL+" at the Port :"+com.Config.Constants.RMI_PORT_NO_MTL);
 		 System.out.println("Server started for "+ServerCenterLocation.QUE+" at the Port :"+com.Config.Constants.RMI_PORT_NO_QUE);
 		 System.out.println("Server started for "+ServerCenterLocation.SHE+" at the Port :"+com.Config.Constants.RMI_PORT_NO_SHE);

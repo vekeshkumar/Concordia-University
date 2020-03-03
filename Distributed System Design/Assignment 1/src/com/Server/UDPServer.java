@@ -20,6 +20,7 @@ public class UDPServer extends Thread{
 	public UDPServer(ServerCenterLocation scloc, ServerImplementation serverImp){
 		scLocation = scloc;
 		this.serverImpl = serverImp;
+		
 		try {
 			switch(scloc) {
 			case MTL:
@@ -28,7 +29,7 @@ public class UDPServer extends Thread{
 				break;
 			case QUE:
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_QUE);
-				 portNumUDP = com.Config.Constants.UDP_PORT_NO_MTL;
+				 portNumUDP = com.Config.Constants.UDP_PORT_NO_QUE;
 				break;
 			case SHE:
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_SHE);
@@ -40,7 +41,6 @@ public class UDPServer extends Thread{
 			System.out.println(io.getMessage());
 		}
 	}
-
 		@Override
 		public void run() {
 			byte[] receiveData;
@@ -49,11 +49,10 @@ public class UDPServer extends Thread{
 					receiveData = new byte[1024];
 					receivePacket = new DatagramPacket(receiveData,receiveData.length);
 					serverSocket.receive(receivePacket);
-					System.out.println("Received Packet:"+new String(receivePacket.getData()));
-					
 					String inputPckt = new String(receivePacket.getData()).trim();
 					new UDPIntReqServer(receivePacket, serverImpl).start();
-					System.out.println(inputPckt);
+					//scLocation: should be other two location
+					
 				} catch (Exception e) {
 					// TODO: handle exception
 				}

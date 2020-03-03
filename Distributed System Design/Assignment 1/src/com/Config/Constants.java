@@ -19,5 +19,9 @@ public class Constants {
 	public static int UDP_PORT_NO_QUE =7000;
 	public static int UDP_PORT_NO_SHE =8000;
 	
+	//log directory
+	public static String PROJECT_DIR = System.getProperty("user.dir");; //"E:\\EclipseWorkspace\\DistributedEventManagementSystem\\";
+	public static String LOG_DIR = PROJECT_DIR+"\\Logs\\";
+	
 	
 }

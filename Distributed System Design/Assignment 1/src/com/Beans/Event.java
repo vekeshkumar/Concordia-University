@@ -14,6 +14,7 @@ public class Event implements Serializable {
 	private int bookingCapacity;
 	private String bookingTime;
 	private ArrayList<String> bookedEvent;
+	private ArrayList<String> bookedCustomerIds;
 	
 	private HashMap<ArrayList<String>, HashMap<ArrayList<String>, ArrayList<String>>> cityHashMap = new HashMap<>();
 	
@@ -63,6 +64,12 @@ public class Event implements Serializable {
 	@Override
 	public String toString() {
 		// TODO Auto-generated method stub
-		return "Event Id="+eventId+"Event Type="+eventType+",Event Capacity"+bookingCapacity;
+		return "Event Id:"+eventId+", Type:"+eventType+", Capacity:"+bookingCapacity+", booked CustomerId:"+bookedCustomerIds;
+	}
+	public ArrayList<String> getBookedCustomerIds() {
+		return bookedCustomerIds;
+	}
+	public void setBookedCustomerIds(ArrayList<String> bookedCustomerIds) {
+		this.bookedCustomerIds = bookedCustomerIds;
 	}
 }

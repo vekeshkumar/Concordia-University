@@ -7,6 +7,7 @@ import java.lang.invoke.MethodHandles.Lookup;
 import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
+import java.text.ParseException;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -16,7 +17,7 @@ import com.Server.ServerImplementation;
 
 public class EventMainClient {
 	
-	public static void main(String[] args) throws IOException, NotBoundException {
+	public static void main(String[] args) throws IOException, NotBoundException, ParseException {
 		while(true) {
 			System.out.println("Distributed Event Management System");
 			//Initializing the client implementation object for method invoke
@@ -90,7 +91,7 @@ public class EventMainClient {
 										System.out.println("Enter event Id and event type");
 										 eventId = br.readLine();
 										 eventType= br.readLine();
-										msg = client.bookEvent(clientId, eventId, eventType);
+										msg = client.cancelEvent(clientId, eventId, eventType);
 										System.out.println(msg);
 										break;
 									case 4:
@@ -112,7 +113,8 @@ public class EventMainClient {
 								System.out.println("1.Add Event");
 								System.out.println("2.Remove Event");
 								System.out.println("3.List Event Availability");
-								System.out.println("4.Logout");
+								System.out.println("4.Cancel event for customer");
+								System.out.println("5.Logout");
 								Integer option = Integer.parseInt(br.readLine());
 								switch (option) {
 									case 1:
@@ -155,6 +157,16 @@ public class EventMainClient {
 										System.out.println(eventListString);
 										break;
 									case 4:
+										System.out.println("Enter event Id and event type and customer ID");
+										 eventId = br.readLine();
+										 eventType= br.readLine();
+										 String cusId = br.readLine();
+										 System.out.println(eventId+eventType+cusId);
+										 String msg =  client.cancelEvent(cusId, eventId, eventType);
+										
+										 System.out.println(msg);
+										break;
+									case 5:
 										 t=0;
 										 System.out.println("Logged out Successfully");
 									 break;

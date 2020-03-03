@@ -6,6 +6,7 @@ import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.rmi.registry.LocateRegistry;
 import java.rmi.registry.Registry;
+import java.text.ParseException;
 
 import com.Beans.Event;
 import com.Config.ServerCenterLocation;
@@ -65,11 +66,11 @@ public class ClientImplementation {
 		
 	}
 	
-	public String removeEvent(String eventId, String eventType) {
+	public String removeEvent(String eventId, String eventType) throws ParseException {
 		String msgResult = "Error";
 		try {
 			if(iCenterServer!=null) {	
-				iCenterServer.removeEvent(eventId, eventType);
+				msgResult = iCenterServer.removeEvent(eventId, eventType);
 			}
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
@@ -88,7 +89,7 @@ public class ClientImplementation {
 		return msgResult;
 	}
 	
-	public String bookEvent(String customerId,String eventId, String eventType) {
+	public String bookEvent(String customerId,String eventId, String eventType) throws ParseException {
 		String msgResult = null;
 		try {
 			msgResult = iCenterServer.bookEvent(customerId,eventId,eventType);
@@ -122,13 +123,5 @@ public class ClientImplementation {
 	
 	
 
-	/*/Java7 Diamond Notation
-	Map<ArrayList, Map<String, Integer>> nestedMap = new HashMap<>();
-
-	//get nested map 
-	Map<String, Integer> innerMap = nestedMap.get(some_key_value_string);
-
-	//now get the Integer value from the innerMap
-	Integer innerMapValue = innerMap.get(some_key_value_string);*/
 
 }
