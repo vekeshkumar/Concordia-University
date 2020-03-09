@@ -15,9 +15,11 @@ import java.util.Map;
 import java.util.Map.Entry;
 import java.util.TreeSet;
 import java.util.logging.Level;
+import java.util.logging.LogManager;
 import java.util.stream.Stream;
 import java.text.DateFormat;
 import java.text.ParseException;
+import com.Config.*;
 
 import com.Beans.Event;
 import com.Beans.EventClient;
@@ -26,6 +28,7 @@ import com.Config.ServerCenterLocation;
 
 @SuppressWarnings("serial")
 public class ServerImplementation implements ICentralizedServer {
+	com.Config.LogManager logManager;
 	UDPServer udpServer;
 	String IPAddress;
 	int bookingCount;
@@ -48,7 +51,8 @@ public class ServerImplementation implements ICentralizedServer {
 
 		clientRecord = new HashMap<>(); 
 		//Start udp server with location.	
-		udpServer = new UDPServer(scloc, this);
+		logManager = new com.Config.LogManager(scloc.toString());
+		udpServer = new UDPServer(scloc,logManager.logger,this);
 		udpServer.start();
 		location = scloc.toString();
 		setIPAddress(scloc);
@@ -91,7 +95,9 @@ public class ServerImplementation implements ICentralizedServer {
 				msg = addEventRecHashMap(this.eventRecordQUE,eventType, eventDetails, eventServLocation);
 			}
 		}
+		logManager.logger.log(Level.INFO, msg);
 		return msg;
+		
 	}
 
 	public String addEventRecHashMap(HashMap<String, HashMap<String, List<Event>>> servLocation, String eventTypeKey, Event eventDetails , String eventLoc) {
@@ -366,6 +372,7 @@ public class ServerImplementation implements ICentralizedServer {
 				System.out.println("Error, Couldn't find the record");
 				break;
 			}
+		logManager.logger.log(Level.INFO, msg);
 		return msg;
 		// TODO Auto-generated method stub
 	}
@@ -402,6 +409,7 @@ public class ServerImplementation implements ICentralizedServer {
 			}
             recordCount += " , " + request.getRemoteListDetails().trim();
         }
+        logManager.logger.log(Level.INFO, "Record Count"+recordCount);
         return recordCount;
 		
 	}
@@ -511,6 +519,7 @@ public class ServerImplementation implements ICentralizedServer {
 		}
 		else
 			msg ="Event is not available in the server";
+		logManager.logger.log(Level.INFO, msg);
 		return msg;
 	}
 	
@@ -588,6 +597,7 @@ public class ServerImplementation implements ICentralizedServer {
 				}
 			}
 		}
+		logManager.logger.log(Level.INFO, msg);
 		System.out.println("Client Record---"+clientRecord);
 		return msg;
 	}
@@ -724,6 +734,7 @@ public class ServerImplementation implements ICentralizedServer {
 			
 			msg ="Event is not available in the server";
 		}
+		logManager.logger.log(Level.INFO, msg);
 		
 		return msg;
 	
@@ -738,6 +749,7 @@ public class ServerImplementation implements ICentralizedServer {
 			eventsList  = clientRecord.get(customerID).listIterator().next().getBookedEventId();
 		}		
 		System.out.println("Event booked:"+eventsList.toString());
+		logManager.logger.log(Level.INFO, eventsList.toString());
 		return eventsList.toString();
 	}
 

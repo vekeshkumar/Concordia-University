@@ -8,15 +8,17 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.text.ParseException;
+import java.util.logging.Level;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
+import com.Config.LogManager;
 import com.Config.ServerCenterLocation;
 import com.Server.ICentralizedServer;
 import com.Server.ServerImplementation;
 
 public class EventMainClient {
-	
+	static com.Config.LogManager logManager;
 	public static void main(String[] args) throws IOException, NotBoundException, ParseException {
 		while(true) {
 			System.out.println("Distributed Event Management System");
@@ -33,6 +35,7 @@ public class EventMainClient {
 			
 			//Check for eight digits		
 			if(clientId.length()!=8) {
+				logManager.logger.log(Level.INFO,"Not a valid Customer Id (CustomerId:" + clientId + ")");
 				System.out.println("Please enter a valid customerID");
 			}
 			else { 
@@ -43,16 +46,19 @@ public class EventMainClient {
 					switch(locName) {
 						case "MTL":
 							//Access the MTL server
-							System.out.println("Accessing the MTL server location");
+							System.out.println("Accessing the MTL server location");							
 							client  = new ClientImplementation(ServerCenterLocation.MTL,clientId); 
+							logManager = new LogManager("MTL");
 							break;
 						case "QUE":
 							System.out.println("Accessing the QUE server location");
 							client  = new ClientImplementation(ServerCenterLocation.QUE,clientId);
+							logManager = new LogManager("QUE");
 							break;
 						case "SHE":
 							System.out.println("Accessing the SHE server location");
 							client  = new ClientImplementation(ServerCenterLocation.SHE,clientId);
+							logManager = new LogManager("SHE");
 							break;
 						default:
 							System.out.println("Please enter the correct ClientId!");

@@ -4,7 +4,10 @@ import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
+import java.util.logging.Level;
+import java.util.logging.Logger;
 
+import com.Config.LogManager;
 import com.Config.ServerCenterLocation;
 
 public class UDPServer extends Thread{
@@ -13,12 +16,14 @@ public class UDPServer extends Thread{
 	DatagramPacket receivePacket = null;
 	DatagramPacket sendPacket = null;
 	int portNumUDP;
-	ServerImplementation serverImpl;	
+	ServerImplementation serverImpl;
+	Logger loggerInstance;
 	ServerCenterLocation scLocation;
 	String recordDetails;
 	
-	public UDPServer(ServerCenterLocation scloc, ServerImplementation serverImp){
+	public UDPServer(ServerCenterLocation scloc, Logger logger, ServerImplementation serverImp){
 		scLocation = scloc;
+		loggerInstance = logger;
 		this.serverImpl = serverImp;
 		
 		try {
@@ -26,14 +31,17 @@ public class UDPServer extends Thread{
 			case MTL:
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_MTL);
 				 portNumUDP = com.Config.Constants.UDP_PORT_NO_MTL;
+				 logger.log(Level.INFO, "MTL UDP Server Started");
 				break;
 			case QUE:
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_QUE);
 				 portNumUDP = com.Config.Constants.UDP_PORT_NO_QUE;
+				 logger.log(Level.INFO, "QUE UDP Server Started");
 				break;
 			case SHE:
 				 serverSocket = new DatagramSocket(com.Config.Constants.UDP_PORT_NO_SHE);
 				 portNumUDP = com.Config.Constants.UDP_PORT_NO_SHE;
+				 logger.log(Level.INFO, "SHE UDP Server Started");
 				break;
 			}
 			

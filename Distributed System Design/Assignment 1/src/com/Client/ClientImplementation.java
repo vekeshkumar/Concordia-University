@@ -1,5 +1,6 @@
 package com.Client;
 
+import java.io.File;
 import java.lang.invoke.MethodHandles.Lookup;
 import java.rmi.AccessException;
 import java.rmi.NotBoundException;
@@ -9,6 +10,8 @@ import java.rmi.registry.Registry;
 import java.text.ParseException;
 
 import com.Beans.Event;
+import com.Config.Constants;
+import com.Config.LogManager;
 import com.Config.ServerCenterLocation;
 import com.Server.ICentralizedServer;
 
@@ -18,6 +21,7 @@ public class ClientImplementation {
 	static Registry registryMTL;
 	static Registry registryQUE;
 	static Registry registrySHE;
+	com.Config.LogManager logManager = null;
 	
 	ICentralizedServer iCenterServer = null;
 	//Get the port registered from the registry
@@ -43,6 +47,8 @@ public class ClientImplementation {
 		else if(loc.equals(ServerCenterLocation.SHE)) {
 			 iCenterServer = (ICentralizedServer)registrySHE.lookup(loc.toString());
 		}
+		boolean mgrID = new File(Constants.LOG_DIR+clientId).mkdir();
+		logManager = new LogManager(clientId);
 	}
 	
 	//Sending the request to the server after converting to event POJO Instance

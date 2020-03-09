@@ -2,6 +2,7 @@ package com.Server;
 import java.util.*;
 import java.util.logging.Level;
 
+import com.Config.Constants;
 import com.Config.LogManager;
 import com.Config.ServerCenterLocation;
 
@@ -40,10 +41,17 @@ public class EventMainServer   {
 			serverMTL = new ServerImplementation(ServerCenterLocation.MTL);
 			serverQUE = new ServerImplementation(ServerCenterLocation.QUE);
 			serverSHE = new ServerImplementation(ServerCenterLocation.SHE);
+			
+			
 			serverRepo = new HashMap<>();
 			serverRepo.put("MTL", serverMTL);
 			serverRepo.put("QUE", serverQUE);
-			serverRepo.put("SHE", serverSHE);		
+			serverRepo.put("SHE", serverSHE);
+			
+			boolean isMTLDir = new File(Constants.LOG_DIR+ServerCenterLocation.MTL.toString()).mkdir();
+			boolean isQUEDir = new File(Constants.LOG_DIR+ServerCenterLocation.QUE.toString()).mkdir();
+			boolean isSHEDir = new File(Constants.LOG_DIR+ServerCenterLocation.SHE.toString()).mkdir();
+			boolean globalDir = new File(Constants.LOG_DIR+"ServerGlobal").mkdir();
 			
 		} catch (RemoteException e) {
 			// TODO Auto-generated catch block
