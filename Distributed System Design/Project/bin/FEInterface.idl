@@ -1,0 +1,16 @@
+module DEMS_FrontEnd
+{
+  
+
+interface DEMSInterface{
+
+	 string addEvent(in string id, in string eventID,in string eventType,in long bookingCapacity) ;
+	 string removeEvent(in string id, in string eventID, in string eventType) ;
+	 string listEventAvailability(in string id,in string eventType) ;
+	 string bookEvent(in string customerID, in string eventID,in string eventType) ;
+	 string getBookingSchedule(in string customerID) ;
+	 string cancelEvent(in string customerID,in string eventID,in string eventType) ;
+	 string swapEvent(in string CustomerID,in string newEventID,in string newEventType,in string oldEventID,in string oldEventType);
+
+};
+};

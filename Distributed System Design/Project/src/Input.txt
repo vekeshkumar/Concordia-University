@@ -1,0 +1,3 @@
+ID,methodName,eventType,eventID,oldEventType,oldEventID,bookingCapacity,CID
+QUEM9988,addEvent,Seminars,QUEM290620,,,1
+MTLM9988,addEvent,Seminars,MTLM290620,,,1
