@@ -1,0 +1,5 @@
+INFO - Tue Mar 17 18:00:01 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM020620 - 55 - Success
+INFO - Tue Mar 17 18:01:00 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM100720 - 66 - Success
+INFO - Tue Mar 17 18:22:25 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM100720 - 66 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - SHEM9988 - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - SHEM9988 - Trade Shows - SHEM250720 - 15 - Success

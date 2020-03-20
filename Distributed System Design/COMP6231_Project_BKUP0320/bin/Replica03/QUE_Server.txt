@@ -1,0 +1,32 @@
+INFO - Wed Mar 18 19:41:36 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:41:36 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:41:36 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:47:51 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:47:51 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:47:51 EDT 2020 - Add event - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:48:43 EDT 2020 - Add event - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 19:48:43 EDT 2020 - Add event - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:05 EDT 2020 - Add event - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:05 EDT 2020 - Add event - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:05 EDT 2020 - Add event - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:56 EDT 2020 - Add event - Conferences - QUEM050820 - 100 - Success
+INFO - Wed Mar 18 20:18:56 EDT 2020 - Add event - Conferences - QUEM050820 - 100 - Success
+INFO - Wed Mar 18 20:18:56 EDT 2020 - Add event - Conferences - QUEM050820 - 100 - Success
+INFO - Wed Mar 18 20:19:44 EDT 2020 - Add event - Conferences - QUEA150920 - 75 - Success
+INFO - Wed Mar 18 20:19:44 EDT 2020 - Add event - Conferences - QUEA150920 - 75 - Success
+INFO - Wed Mar 18 20:19:44 EDT 2020 - Add event - Conferences - QUEA150920 - 75 - Success
+INFO - Wed Mar 18 20:20:28 EDT 2020 - Add event - Trade Shows - QUEM011020 - 443 - Success
+INFO - Wed Mar 18 20:20:28 EDT 2020 - Add event - Trade Shows - QUEM011020 - 443 - Success
+INFO - Wed Mar 18 20:20:28 EDT 2020 - Add event - Trade Shows - QUEM011020 - 443 - Success
+INFO - Wed Mar 18 20:21:25 EDT 2020 - Add event - Trade Shows - MTLM051020 - 122 - Success
+INFO - Wed Mar 18 20:21:25 EDT 2020 - Add event - Trade Shows - MTLM051020 - 122 - Success
+INFO - Wed Mar 18 20:21:25 EDT 2020 - Add event - Trade Shows - MTLM051020 - 122 - Success
+INFO - Wed Mar 18 20:22:09 EDT 2020 - Add event - Seminars - MTLM081120 - 130 - Success
+INFO - Wed Mar 18 20:22:09 EDT 2020 - Add event - Seminars - MTLM081120 - 130 - Success
+INFO - Wed Mar 18 20:22:09 EDT 2020 - Add event - Seminars - MTLM081120 - 130 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success

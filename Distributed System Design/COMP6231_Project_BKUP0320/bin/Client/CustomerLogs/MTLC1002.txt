@@ -1,0 +1,2 @@
+INFO - Tue Mar 17 02:39:20 EDT 2020 - Book Event- MTLC1002 - Seminars - MTL010920 - Process is crashed
+INFO - Tue Mar 17 11:27:45 EDT 2020 - Book Event- MTLC1002 - Seminars - MTL010920 - Process is crashed

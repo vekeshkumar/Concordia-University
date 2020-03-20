@@ -1,0 +1,6 @@
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success

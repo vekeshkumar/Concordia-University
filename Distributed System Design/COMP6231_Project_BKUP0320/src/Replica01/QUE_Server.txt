@@ -1,0 +1,2 @@
+INFO - Thu Mar 19 20:06:35 EDT 2020 - Add event - TradeShow - QUEM150820 - 30 - Success
+INFO - Thu Mar 19 20:08:45 EDT 2020 - Add event - Seminars - SHEM240920 - 14 - Success

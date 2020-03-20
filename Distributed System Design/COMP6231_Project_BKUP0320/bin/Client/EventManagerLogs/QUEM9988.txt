@@ -1,0 +1,12 @@
+INFO - Wed Mar 11 14:34:16 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 1 - Hello from Add Event
+INFO - Tue Mar 17 11:32:52 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 10 - Process is crashed
+INFO - Tue Mar 17 17:54:30 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 10 - Process is crashed
+INFO - Wed Mar 18 19:16:13 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:22:59 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Cannot add other citi's event
+INFO - Wed Mar 18 19:41:37 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:47:51 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:48:44 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM021220 - 14 - PROCESS_CRASH|RM02
+INFO - Wed Mar 18 20:18:05 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:56 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM050820 - 100 - Success
+INFO - Wed Mar 18 20:19:44 EDT 2020 - Add event - QUEM9988 - Conferences - QUEA150920 - 75 - Success
+INFO - Wed Mar 18 20:20:28 EDT 2020 - Add event - QUEM9988 - Trade Shows - QUEM011020 - 443 - Success

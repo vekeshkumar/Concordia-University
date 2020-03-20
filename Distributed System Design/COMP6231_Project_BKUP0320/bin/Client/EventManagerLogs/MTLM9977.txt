@@ -1,0 +1,7 @@
+INFO - Tue Mar 17 01:37:56 EDT 2020 - Add event - MTLM9977 - Conferences - MTL170620 - 10 - Process is crashed
+INFO - Tue Mar 17 01:54:45 EDT 2020 - Add event - MTLM9977 - Conferences - MTL150620 - 100 - Process is crashed
+INFO - Tue Mar 17 02:08:13 EDT 2020 - Add event - MTLM9977 - Conferences - MTL050820 - 200 - Process is crashed
+INFO - Tue Mar 17 02:20:33 EDT 2020 - Add event - MTLM9977 - Conferences - MTL240820 - 300 - Process is crashed
+INFO - Tue Mar 17 02:32:15 EDT 2020 - Add event - MTLM9977 - Seminars - MTL020820 - 400 - Process is crashed
+INFO - Tue Mar 17 02:34:19 EDT 2020 - Add event - MTLM9977 - Seminars - MTL070820 - 99 - Process is crashed
+INFO - Tue Mar 17 02:34:38 EDT 2020 - Add event - MTLM9977 - Seminars - MTL010920 - 8 - Process is crashed
