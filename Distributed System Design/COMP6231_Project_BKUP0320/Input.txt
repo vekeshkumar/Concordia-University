@@ -1,2 +1,0 @@
-ID,methodName,eventType,eventID,oldEventType,oldEventID,bookingCapacity,CID
-SHEC9988,bookEvent,Seminars,SHEM240920

@@ -1,0 +1,12 @@
+INFO - Thu Mar 19 10:40:27 EDT 2020 - Add event - Trade Shows - MTLM010820 - 24 - Success
+INFO - Thu Mar 19 16:02:45 EDT 2020 - Add event - Trade Shows - MTLM010820 - 254 - Success
+INFO - Thu Mar 19 16:04:27 EDT 2020 - Book Event- MTLC1122 - Trade Shows - MTLM010820 - Success
+INFO - Thu Mar 19 16:05:52 EDT 2020 - Add event - Seminars - MTLM020820 - 300 - Success
+INFO - Thu Mar 19 16:06:29 EDT 2020 - Book Event- MTLC1122 - Seminars - MTLM020820 - Success
+INFO - Thu Mar 19 16:07:22 EDT 2020 - Cancel Event- MTLC1122 - Seminars - MTLM020820 - Success
+INFO - Thu Mar 19 16:09:06 EDT 2020 - Book Event- MTLC1133 - Seminars - MTLM020820 - Success
+INFO - Thu Mar 19 20:04:25 EDT 2020 - Add event - Seminars - MTLM290620 - 10 - Success
+INFO - Thu Mar 19 20:05:53 EDT 2020 - Add event - Conference - MTLA140820 - 20 - Success
+INFO - Thu Mar 19 20:06:35 EDT 2020 - Add event - TradeShow - QUEM150820 - 30 - Success
+INFO - Thu Mar 19 20:08:45 EDT 2020 - Add event - Seminars - SHEM240920 - 14 - Success
+INFO - Sat Mar 21 16:59:49 EDT 2020 - Book Event- MTLM9988 - Seminars - MTLM240920 - The eventType you are trying to book doesn't exist
