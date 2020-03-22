@@ -1,2 +1,2 @@
 ID,methodName,eventType,eventID,oldEventType,oldEventID,bookingCapacity,CID
-MTLM9988,bookEvent,Seminars,MTLM240920
+MTLM1122,listEventAvailability,Seminars

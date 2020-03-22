@@ -31,6 +31,8 @@ import org.omg.CORBA.ORB;
 import EventApp01.EventServer01POA;
 
 public class EventManagement extends EventServer01POA{
+	
+	public static boolean sendCorrectResult = false;
 	private ORB orb;
 	public String serverName;
 	Logger logger;
@@ -225,7 +227,12 @@ public class EventManagement extends EventServer01POA{
 		else {
 			for (String keyN : eventDB.get(eventType).keySet()) {
 				eventList.append("[").append(keyN).append(" - ");
-				seatsAvailable = eventDB.get(eventType).get(keyN).bookingCapacity - eventDB.get(eventType).get(keyN).currentlyBooked;
+				
+				//For Software Failure..
+				System.out.println("sendCorrectResult= " + sendCorrectResult);
+				if (sendCorrectResult) seatsAvailable = eventDB.get(eventType).get(keyN).bookingCapacity - eventDB.get(eventType).get(keyN).currentlyBooked;
+				else seatsAvailable = 10000;
+				
 				eventList.append(seatsAvailable).append("]");
 			}
 		}

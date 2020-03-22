@@ -53,7 +53,7 @@ public class ReplicaClient {
 
 			//Resolve the object reference in naming
 			name = "MTL";			
-			MTLImpl = EventServer01Helper.narrow(ncRef.resolve_str(name));
+			MTLImpl = EventServer01Helper.narrow(ncRef.resolve_str(name));		
 			System.out.println("Obtained a handle on MTL Server object: "+MTLImpl);
 			
 			//Resolve the object reference in naming

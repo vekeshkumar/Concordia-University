@@ -10,6 +10,7 @@ import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.SocketTimeoutException;
 import java.net.UnknownHostException;
+import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.LinkedList;
 import java.util.List;
@@ -76,7 +77,7 @@ public class FrontEndManagement extends FrontEndServerPOA{
 		switch (FrontEndDB.get(seqNo).getRequestStatus()) {
 		case "SOFTWARE_FAILURE":
 			requestObj = new Request();
-			requestObj.setRequestType(FrontEndDB.get(seqNo).getRequestStatus());
+			requestObj.setRequestType("SOFTWARE_FAILURE");
 			requestObj.setRequestMsg(FrontEndDB.get(seqNo).getSwFailedRMID());
 			
 			if (isConsecutiveFailure(FrontEndDB.get(seqNo).getSwFailedRMID(), seqNo)) {
@@ -88,13 +89,20 @@ public class FrontEndManagement extends FrontEndServerPOA{
 			return FrontEndDB.get(seqNo).getCorrectResponse();
 		
 		case "PROCESS_CRASH":
-			requestObj = new Request();
-			requestObj.setRequestType("PROCESS_CRASH");
-			requestObj.setRequestMsg(FrontEndDB.get(seqNo).getCrashedRMIDs().toString());
-			
-			//Send the request..
-			UDPUniCastSend(requestObj);
-			return FrontEndDB.get(seqNo).getCorrectResponse();
+			if (FrontEndDB.get(seqNo).getCrashedRMIDs().size() ==  1) {
+				requestObj = new Request();
+				requestObj.setRequestType("PROCESS_CRASH");
+				requestObj.setRequestMsg(FrontEndDB.get(seqNo).getCrashedRMIDs().get(0));
+				
+				//Send the request..
+				UDPUniCastSend(requestObj);
+				return FrontEndDB.get(seqNo).getCorrectResponse();
+			}
+			else {
+				//3. Send to client..
+				FrontEndDB.get(seqNo).setCorrectResponse("Time Out from all 3 RMs..");
+				return FrontEndDB.get(seqNo).getCorrectResponse();
+			}
 		
 		default: 
 			return FrontEndDB.get(seqNo).getCorrectResponse();
@@ -162,7 +170,6 @@ public class FrontEndManagement extends FrontEndServerPOA{
 				System.out.println("Reply Received at - " +new java.util.Date().toString() +" is = " +resultObj +" - From Port no." +request.getPort());
 				replyList.add(resultObj);
 				
-				
 				//Check whether it's a first request..
 				if (isFirstReq == true) {  //No Process Crash..
 					if (replyList.size() == 3) {
@@ -177,42 +184,71 @@ public class FrontEndManagement extends FrontEndServerPOA{
 						else {  //Software Failure occurred..							
 							frontendDataObj = new FrontEndData(replyList.get(0).getSeqNo(), replyList.get(0).getRequestMsg(),"SOFTWARE_FAILURE", null, timeList, failedRMID, null);
 							
-							//Update correct result..
+							//Give the correct result..
 							for(Result result: replyList) {
 								if (!result.getRMID().equals(failedRMID)) frontendDataObj.setCorrectResponse(result.getResponse());
 							}
 							
-							FrontEndDB.put(replyList.get(0).getSeqNo(), frontendDataObj);			
+							FrontEndDB.put(replyList.get(0).getSeqNo(), frontendDataObj);
 						}
 						isFirstReq = false;
+						System.out.println("frontendDataObj= " +frontendDataObj);
 						return replyList.get(0).getSeqNo();
 					}
 				}
 				else {
-					
+					if (replyList.size() == 3) {
+						//All 3 RMs sent their responses.. Check for Software Failure..
+						dynamicTime =  2* timeList.get(timeList.size()-1);
+						String failedRMID = checkSoftwareFailure(replyList);
+						
+						if (failedRMID == null) {  //No Software Failure..
+							frontendDataObj = new FrontEndData(replyList.get(0).getSeqNo(), replyList.get(0).getRequestMsg(), "Success", replyList.get(0).getResponse(), timeList, null, null);
+							FrontEndDB.put(resultObj.getSeqNo(), frontendDataObj);
+						}
+						else {  //Software Failure occurred..							
+							frontendDataObj = new FrontEndData(replyList.get(0).getSeqNo(), replyList.get(0).getRequestMsg(),"SOFTWARE_FAILURE", null, timeList, failedRMID, null);
+							
+							//Give the correct result..
+							for(Result result: replyList) {
+								if (!result.getRMID().equals(failedRMID)) frontendDataObj.setCorrectResponse(result.getResponse());
+							}
+							
+							FrontEndDB.put(replyList.get(0).getSeqNo(), frontendDataObj);
+						}
+						System.out.println("frontendDataObj= " +frontendDataObj);
+						return replyList.get(0).getSeqNo();
+					}
+					else { 
+						//<3 RMs sent their response.. 
+						if (System.currentTimeMillis() - startTime > dynamicTime) {
+							System.out.println("Raising SocketTimeoutException..");
+							throw new SocketTimeoutException("Socket Timeout");
+						}
+					}
 				}
 			}
 		}
 		catch(SocketTimeoutException e) {
 			System.out.println("Socket Timeout Exception in FrontEndManagement UDPUniCastReceive: " + e.getMessage());
 			
-//			//Time Limit Exceeded.. Check which RM got crashed..
-//			Map<String, Character> RMStatus = checkRMStatus(replyList);
-//			System.out.println("RM Status = "+RMStatus);
-//			
-//			StringBuilder sb = new StringBuilder();
-//			sb.append("PROCESS_CRASH");
-//			char crashedRM = 'N';
-//			
-//			for(String RMID: RMStatus.keySet()) {
-//				if (RMStatus.get(RMID) != 'Y') {
-//					sb.append("|").append(RMID);
-//					crashedRM = 'Y';
-//				}
-//			}
-//			
-//			if (crashedRM == 'Y') return sb.toString();
-//			else return null;
+			//Time Limit Exceeded.. Check which RM got crashed..
+			Map<String, Character> RMStatus = checkRMStatus(replyList);
+			System.out.println("RM Status = "+RMStatus);
+
+			frontendDataObj = new FrontEndData(replyList.get(0).getSeqNo(), replyList.get(0).getRequestMsg(),"PROCESS_CRASH", replyList.get(0).getResponse(), timeList, null, null);		
+			List<String> crashedRMIDs = new ArrayList<String>();
+			
+			for(String RMID: RMStatus.keySet()) {
+				if (RMStatus.get(RMID) != 'Y') {
+					crashedRMIDs.add(RMID);		
+				}
+			}
+			frontendDataObj.setCrashedRMIDs(crashedRMIDs);
+			FrontEndDB.put(replyList.get(0).getSeqNo(), frontendDataObj);
+			
+			System.out.println("frontendDataObj= " +frontendDataObj);
+			return replyList.get(0).getSeqNo();
 		}
 		catch (SocketException e){System.out.println("Socket error in FrontEndManagement UDPUniCastReceive: " + e.getMessage());}
 		catch (IOException e) {System.out.println("IO error in FrontEndManagement UDPUniCastReceive: " + e.getMessage());}
@@ -250,7 +286,6 @@ public class FrontEndManagement extends FrontEndServerPOA{
 		for(String RMID: RMStatus.keySet()) {
 			if (RMStatus.get(RMID) != 'Y') System.out.println(RMID +" is crashed..");
 		}
-		
 		return RMStatus;
 	}
 	

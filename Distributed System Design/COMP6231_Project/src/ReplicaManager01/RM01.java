@@ -24,6 +24,7 @@ import java.util.concurrent.PriorityBlockingQueue;
 import Dependencies.LogData;
 import Dependencies.Request;
 import Dependencies.Result;
+import Replica01.EventManagement;
 import Replica01.ReplicaServer;
 
 public class RM01 {
@@ -267,13 +268,20 @@ class ExecuteRequest implements Runnable {
 				//resultObj = new Result(RMID, request, "PROCESS_CRASH received");
 				//UDPUniCastSend(resultObj);
 				break;
+				
 			case 9998:
 				//SOFTWARE_FAILURE
 				String failedRM = requestObj.getRequestMsg();
+				EventManagement.sendCorrectResult = true;
 				
-				resultObj = new Result(seqNo, RMID, requestObj.getRequestMsg(), "SOFTWARE_FAILURE received");
+//				if (requestObj.isConsecutiveswFailure() && failedRM.equals(RMID)) {
+//					EventManagement.sendCorrectResult = true;
+//				}
+				
+				resultObj = new Result(seqNo, RMID, requestObj.getRequestMsg(), "SOFTWARE_FAILURE received and corrected..");
 				UDPUniCastSend(resultObj, "127.0.0.1", 8006);
 				break;
+				
 			case 9997:
 				//GET_LOGFILE
 				try {
