@@ -70,8 +70,6 @@ public class UDPIntReqClient extends Thread {
   				System.out.println("UDP Client response-"+value);
   				System.out.println(serverImp.location+"--"+value);
   				msg = value;
-  				
-				
 			} catch (Exception e) {
 				// TODO: handle exception
 			}
@@ -81,8 +79,4 @@ public class UDPIntReqClient extends Thread {
 	            }
 	        }
 		}
-	
-		
-		
-
 }

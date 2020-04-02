@@ -1,0 +1,18 @@
+Mar 31, 2020 3:48:34 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1999
+Event Type:Conference
+Event ID:SHEE150620
+Event registered successfully
+Mar 31, 2020 4:21:28 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1999
+Event Type:Conference
+Event ID:SHEE150620
+Event registered successfully
+Mar 31, 2020 6:55:50 PM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1999
+Event Type:Conference
+Event ID:SHEE150620
+Event registered successfully

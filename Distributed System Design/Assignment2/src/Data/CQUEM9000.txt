@@ -1,0 +1,42 @@
+Mar 31, 2020 3:40:36 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Mar 31, 2020 3:40:36 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Mar 31, 2020 4:14:21 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Mar 31, 2020 4:14:21 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Mar 31, 2020 6:49:37 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Mar 31, 2020 6:49:37 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success

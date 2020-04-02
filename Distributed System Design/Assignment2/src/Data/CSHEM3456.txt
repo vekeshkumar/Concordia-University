@@ -1,0 +1,66 @@
+Mar 31, 2020 3:40:27 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 3:40:27 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 3:42:42 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Mar 31, 2020 3:42:51 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Mar 31, 2020 4:14:03 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 4:14:03 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 4:18:24 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Mar 31, 2020 4:19:01 AM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Mar 31, 2020 6:49:08 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 6:49:08 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Mar 31, 2020 6:54:19 PM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Mar 31, 2020 6:54:31 PM FrontEnd.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed

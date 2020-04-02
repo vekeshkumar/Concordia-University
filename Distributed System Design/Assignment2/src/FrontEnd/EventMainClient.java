@@ -1,6 +1,8 @@
 package FrontEnd;
 
 import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
 import java.lang.invoke.MethodHandles.Lookup;
@@ -8,6 +10,11 @@ import java.rmi.Naming;
 import java.rmi.NotBoundException;
 import java.rmi.RemoteException;
 import java.text.ParseException;
+import java.util.ArrayList;
+import java.util.Scanner;
+import java.util.logging.FileHandler;
+import java.util.logging.Logger;
+import java.util.logging.SimpleFormatter;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -20,204 +27,97 @@ import org.omg.CosNaming.NamingContextPackage.NotFound;
 
 import DEMS_FrontEnd.DEMSInterface;
 import DEMS_FrontEnd.DEMSInterfaceHelper;
-
-
-
+import Servers.MultiThreadingImp;
 
 public class EventMainClient {
+	static final Logger log=Logger.getLogger(EventMainClient.class.getName());
+	static FileHandler file1=null;	
+	static String path="E:\\EclipseWorkspace\\DEMSCorba\\src\\Data\\C";
+	static String filename;
+	static SimpleFormatter formatter = new SimpleFormatter();
 	
 	public static void main(String[] args) throws IOException, NotBoundException, ParseException, NotFound, CannotProceed, InvalidName {
-		while(true) {
-			System.out.println("Distributed Event Management System");
+		Scanner input=new Scanner(System.in);
+		try 
+		{
+			String option=null;
+			String uid = null;
+			System.out.println("Enter the operation");
+			option=input.nextLine();
+			System.out.println(option);
+			uid  = input.nextLine();
 
 			
-			Pattern validateNumber = Pattern.compile("([0-9]*)");
-			BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-			System.out.println("Please enter your ID");
-			String clientId= br.readLine();
-			//Check for last 4 digits as number
-			String customerNum =clientId.substring(4, 6);			
-			Matcher matchID = validateNumber.matcher(customerNum);
-			ORB orb = ORB.init(args, null);
-			//-ORBInitialPort 1050 -ORBInitialHost localhost
-			org.omg.CORBA.Object objRef = null;
-			try {
-				objRef = orb.resolve_initial_references("NameService");
-			} catch (org.omg.CORBA.ORBPackage.InvalidName e) {
-				// TODO Auto-generated catch block
-				e.printStackTrace();
-			}
-			NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
-			DEMSInterface client = null ;
+			File folder = new File("E:\\EclipseWorkspace\\DEMSCorba\\src\\Data\\"+option+"\\"+uid);
+			File[] listOfFiles = folder.listFiles();
+			ArrayList<Thread> threads=new ArrayList<Thread>();
+			ArrayList<MultiThreadingImp> messages=new ArrayList<MultiThreadingImp>();
 			
-			//Check for eight digits		
-			if(clientId.length()!=8) {
-				System.out.println("Please enter a valid customerID");
-			}
-			else { 
-				//Check for the role of the Location and role of the customer(User or Manager)				
-				String locName = clientId.substring(0, 3);
-				String  clientType =clientId.substring(3, 4);
-				if(!locName.isEmpty()) {
-					switch(locName) {
-						case "MTL":
-							//Access the MTL server
-							System.out.println("Accessing the MTL server location");
-							client = DEMSInterfaceHelper.narrow(ncRef.resolve_str(locName));
-							
-							break;
-						case "QUE":
-							System.out.println("Accessing the QUE server location");
-							client = DEMSInterfaceHelper.narrow(ncRef.resolve_str(locName));
-							break;
-						case "SHE":
-							System.out.println("Accessing the SHE server location");
-							client = DEMSInterfaceHelper.narrow(ncRef.resolve_str(locName));
-							break;
-						default:
-							System.out.println("Please enter the correct ClientId!");
-							break;
-					}
-
-					//Two switch case for Manager and Customer
-					if(clientType.equalsIgnoreCase("c") || clientType.equalsIgnoreCase("m")) {
-						if(clientType.equalsIgnoreCase("c")) {
-							int t=1;
-							String eventId = null;
-							String eventType = null;
-							String msg = null;
-							while(t!=0) {
-								System.out.println("1.Book Event");
-								System.out.println("2.Get Event Schedule");
-								System.out.println("3.Cancel Event");
-								System.out.println("4.Logout");
-								System.out.println("--------------------");
-								Integer option = Integer.parseInt(br.readLine());								
-								switch (option) {
-									case 1:
-										//Get all the input Required.
-										System.out.println("Enter event Id and event type");
-										 eventId = br.readLine();
-										 eventType= br.readLine();
-										msg = client.bookEvent(clientId, eventId, eventType);
-										System.out.println(msg);
-										break;
-									case 2:
-										//ClientId is enough Display the List
-										msg = client.getBookingSchedule(clientId);
-										System.out.println(msg);
-										break;
-									case 3:
-										System.out.println("Enter event Id and event type");
-										 eventId = br.readLine();
-										 eventType= br.readLine();
-										msg = client.cancelEvent(clientId, eventId, eventType);
-										System.out.println(msg);
-										break;
-									case 4:
-										 t =0;
-										 System.out.println("Logged out Successfully");
-										 break;
-		
-									default:
-										break;
-								}
-		
-							}
-					}
-						else {
-							int t=1;
-							String eventId = null;
-							String eventType = null;
-							while(t!=0) {
-								System.out.println("1.Add Event");
-								System.out.println("2.Remove Event");
-								System.out.println("3.List Event Availability");
-								System.out.println("4.Cancel event for customer");
-								System.out.println("5.Logout");
-								Integer option = Integer.parseInt(br.readLine());
-								switch (option) {
-									case 1:
-										System.out.println("Please enter the following:");										
-										System.out.println("1.Event Id: MTL/SHE/QUE -Location,M/A/E-Timing, 102220 -Date");
-										 eventId = br.readLine();
-										System.out.println("2.Event Type: Conference/Seminar/Trade Show");
-										 eventType = br.readLine();
-										System.out.println("3.BookingCapacity :");
-										int bookingCapacity = Integer.parseInt(br.readLine());	
-										
-										if(client!=null) {
-											if(eventId.length()==10) 
-												{
-													if(checkEventIdValidation(eventId,clientId)) {
-														if(locName.equalsIgnoreCase(eventId.substring(0, 3))) {
-															String msg = client.addEvent(eventId, eventType, bookingCapacity);
-															System.out.println("Message from the server:-"+msg);
-														}else {
-															System.out.println("Event can be added only to your server");
-														}
-													}
-												
-												}
-											else
-												System.out.println("Please check your Event id format and re-enter it again");
-										}
-										break;
-									case 2:
-										System.out.println("Enter the event id and type to remove");
-										eventId = br.readLine();
-										eventType= br.readLine();
-										String msgResult = client.removeEvent(eventId,eventType);
-										System.out.println("Message from the server:-"+msgResult);
-										break;
-									case 3:
-										System.out.println("Enter the event type to know the availability");
-										eventType = br.readLine();
-										String eventListString = client.listEventAvailability(eventType);
-										System.out.println(eventListString);
-										break;
-									case 4:
-										System.out.println("Enter event Id and event type and customer ID");
-										 eventId = br.readLine();
-										 eventType= br.readLine();
-										 String cusId = br.readLine();
-										 System.out.println(eventId+eventType+cusId);
-										 String msg =  client.cancelEvent(cusId, eventId, eventType);
-										
-										 System.out.println(msg);
-										break;
-									case 5:
-										 t=0;
-										 System.out.println("Logged out Successfully");
-									 break;
-			
-									default:
-										break;
-								}
-							} 
-						
-						}
-					}
-											
-				}else  
-					System.out.println("Please enter a valid clientId");
+			for(File file:listOfFiles)
+			{
+				ArrayList<String> lines = new ArrayList<String>();
+				
+				 BufferedReader br = new BufferedReader(new FileReader(file));
+				 String st; 
+				 while ((st = br.readLine()) != null) 
+				  {
+				    lines.add(st); 
+				  }
+				String[] datas = lines.toArray(new String[lines.size()]);	
+				
+				ORB orb = ORB.init(args, null);
+				//-ORBInitialPort 1050 -ORBInitialHost localhost
+				org.omg.CORBA.Object objRef = orb.resolve_initial_references("NameService");
+				NamingContextExt ncRef = NamingContextExtHelper.narrow(objRef);
+				DEMSInterface obj = null;
+	
+				if(datas[0].contains("MTL"))
+				{
+					
+					obj = (DEMSInterface) DEMSInterfaceHelper.narrow(ncRef.resolve_str("MTL"));
 				}
-		}
-	}	
-	public static boolean checkEventIdValidation(String eventId, String clientId) {
-		boolean isValidEveId =false;
-		Pattern eventPattern = Pattern.compile("([A-Z]{1,3})([M,A,E]{1})([0-9]{5,6})");
-		if(eventId.substring(0, 2).equalsIgnoreCase(clientId.substring(0,2))) {
-			Matcher eventIdPattern = eventPattern.matcher(eventId);
-			if(eventIdPattern.matches()) {
-				isValidEveId = true;
-			}else {
-				System.out.println("Please check your Event id format and re-enter it again");
+				else if(datas[0].contains("QUE"))
+				{
+					obj = (DEMSInterface) DEMSInterfaceHelper.narrow(ncRef.resolve_str("QUE"));
+				}
+				else if(datas[0].contains("SHE"))
+				{
+					obj = (DEMSInterface) DEMSInterfaceHelper.narrow(ncRef.resolve_str("SHE"));
+				}					
+				
+				MultiThreadingImp threadobj=new MultiThreadingImp(obj,datas);
+				messages.add(threadobj);
+				
+				Thread t=new Thread(threadobj);
+				threads.add(t);
+				t.start();
+				br.close();
 			}
-		}
-		return isValidEveId;
-	}
-	
-	
-	
+			for(int j=0;j<threads.size();j++)
+			{
+				while(threads.get(j).isAlive())
+				{
+					if(messages.get(j).msg!=null)
+					{
+						threads.get(j).interrupt();
+					}
+				}
+			}
+			
+			for(int j=0;j<threads.size();j++)
+			{
+				filename=path+messages.get(j).datas[0]+".txt";
+				file1=new FileHandler(filename,true);
+				file1.setFormatter(formatter);
+				log.addHandler(file1);
+				log.setUseParentHandlers(false);
+				log.info(messages.get(j).loginfo);
+				file1.close();
+				
+			}
+
+		}catch (Exception e) {
+			System.out.println("Hello Client exception: " + e);
+			e.printStackTrace();}
+	}	
 }

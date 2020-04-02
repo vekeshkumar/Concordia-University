@@ -159,7 +159,7 @@ public class _DEMSInterfaceStub extends org.omg.CORBA.portable.ObjectImpl implem
                 return swapEvent (CustomerID, newEventID, newEventType, oldEventID, oldEventType        );
             } finally {
                 _releaseReply ($in);
-            }
+;            }
   } // swapEvent
 
   // Type-specific CORBA::Object operations

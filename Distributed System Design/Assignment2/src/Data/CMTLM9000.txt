@@ -1,0 +1,63 @@
+Mar 31, 2020 3:40:31 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 3:40:31 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 3:40:31 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 4:14:12 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 4:14:12 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 4:14:12 AM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 6:49:30 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 6:49:30 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Mar 31, 2020 6:49:30 PM FrontEnd.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success

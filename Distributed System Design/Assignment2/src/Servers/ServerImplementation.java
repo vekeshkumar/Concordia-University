@@ -29,11 +29,11 @@ import DEMS_FrontEnd.DEMSInterfacePOA;
 
 public class ServerImplementation extends  DEMSInterfacePOA{
 	// TODO Auto-generated method stub
-			private ORB orb;
+	private ORB orb;
 
-			public void setORB(ORB orb_val) {
-				orb = orb_val;
-			}
+	public void setORB(ORB orb_val) {
+		orb = orb_val;
+	}
 	
 	UDPServer udpServer;
 	String IPAddress;
@@ -79,7 +79,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		}
 		
 	}		
-	public String addEvent(String eventID, String eventType, int bookingCapactiy) {
+	public synchronized String addEvent(String eventID, String eventType, int bookingCapactiy) {
 		Event eventDetails = new Event();
 		eventDetails.setEventType(eventType);
 		eventDetails.setId(eventID);
@@ -102,7 +102,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		return msg;
 	}
 
-	public String addEventRecHashMap(HashMap<String, HashMap<String, List<Event>>> servLocation, String eventTypeKey, Event eventDetails , String eventLoc) {
+	public synchronized String addEventRecHashMap(HashMap<String, HashMap<String, List<Event>>> servLocation, String eventTypeKey, Event eventDetails , String eventLoc) {
 		String msg = "Error!. Please try again";
 		//Storing the event details with the Key
 		String eventServLocation = eventDetails.getId().substring(0,3);
@@ -168,7 +168,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 	}	
 	
 	//Remove Event from server, cancel all the booking, and book for next available event
-	public String removeEvent(String eventID, String eventType) {
+	public synchronized String removeEvent(String eventID, String eventType) {
 		//Check the server location
 		//find the event 
 		// remove it from the hashmap
@@ -238,7 +238,6 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 								}
 								if(nexteventdate.compareTo(newdate)>0)
 								{
-									
 									Date nedate=nexteventdate;
 									DateFormat dateFormat = new SimpleDateFormat("ddMMyyhh");  
 									String nextevent = dateFormat.format(nedate);  
@@ -332,7 +331,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 				 msg = "Record removed";
 				break;
 			case "SHE":
-				for(String keyi:eventRecordMTL.get(eventType).keySet())
+				for(String keyi:eventRecordSHE.get(eventType).keySet())
 				{
 					String newvalue = null;
 					if(keyi.charAt(3)=='M') {newvalue=keyi.substring(4)+"09";}
@@ -401,7 +400,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		// TODO Auto-generated method stub
 	}
 	//Seminars: MTLE130320 3, SHEA060220 6, QUEM180230 0, MTLE190320 2
-	public String listEventAvailability(String eventType) {
+	public synchronized String listEventAvailability(String eventType) {
 		//Check all 3 servers
 		// get events from each servers of the given type
 		//capacity is available 
@@ -435,7 +434,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
         return recordCount;
 		
 	}
-	public String getCurrServerCnt(String location,String eventType){
+	public synchronized String getCurrServerCnt(String location,String eventType){
 		//Get all values from current server whose capacity is not full
 		String value= null;
 		if(this.location.equals("MTL")) {			
@@ -450,7 +449,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		return value;
 	}
 	 //fn to get list of events from a server
-	 public static String getEventIds(HashMap<String, HashMap<String, List<Event>>> servLocation, String eventType) {
+	 public synchronized static String getEventIds(HashMap<String, HashMap<String, List<Event>>> servLocation, String eventType) {
 		 ArrayList<String> value = new  ArrayList<>();
 		 String strValue =  "No event is available";
 		 
@@ -473,48 +472,85 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 	 }
 	
 	
-	public String bookCurrEvent(HashMap<String, HashMap<String, List<Event>>> servLocation,String customerId,String eventId, String eventType, String eventLoc){
+	public synchronized String bookCurrEvent(HashMap<String, HashMap<String, List<Event>>> servLocation,String customerId,String eventId, String eventType, String eventLoc){
 		//Get details - check if same customer login is booking the event
 		//Check the customer has already booked the event
 		//Update should be done in ArrayList of EventRecord and also in ClientRecord
 		//bookedCustomerIds[],  bookedEventIds[]  
 		String msg = null;
 		if(servLocation.containsKey(eventType) && servLocation.get(eventType).containsKey(eventId)) {
+			
 			int bookingCapacity=0;
 			String customerLoc = customerId.substring(0, 3);
 			boolean isRegistrationSuccessful =false;
-			System.out.println(clientRecord);
-			//Event
-			Event eve = new Event();
-			List<Event> record = new ArrayList<Event>();		
-			record = (List<Event>) servLocation.get(eventType).get(eventId);
-			for (Event event: record) {
-				bookingCapacity = event.getBookingCapacity();
-				eve.setId(event.getId());
-				eve.setEventType(event.getEventType());
-				eve.setBookedCustomerIds(event.getBookedCustomerIds());
-			}		
-			//Client
-			//Update booking capacity
-			//Update Customer Id in Event and client record
-			if(bookingCapacity>=1) {
-				bookingCapacity-=1;
-				eve.setBookingCapacity(bookingCapacity);				
-				if(eve.getBookedCustomerIds()==null) {
-   					ArrayList<String> arrList = new ArrayList<>();
-					arrList.add(customerId);
-					eve.setBookedCustomerIds(arrList);
-				}else {
-					if(eve.getBookedCustomerIds().contains(customerId)) {
-						msg="Already the event is booked by the customer";
+			
+			//check if any events registered on the same slot
+			if(clientRecord.containsKey(customerId)) {
+				if(!clientRecord.get(customerId).listIterator().next().getBookedEventId().contains(eventId)) {
+					isRegistrationSuccessful = true;
+				} else  {
+					ArrayList<String> customerEvents = new  ArrayList<>();
+					customerEvents = clientRecord.get(customerId).listIterator().next().getBookedEventId();
+					if(!customerEvents.isEmpty()) {
+						for(String eachEvent : customerEvents) {
+							if(eachEvent.substring(3).equalsIgnoreCase(eventId.substring(3))==false) {
+								msg = "You have already booked another event in the same slot! Please try a different slot";
+							}
+						}
+						if(msg.equalsIgnoreCase("You have already booked another event in the same slot! Please try a different slot")) {
+							isRegistrationSuccessful = false;
+						}else {
+							isRegistrationSuccessful = true;
+						}
+						
 					}else {
-						ArrayList<String> arrList = eve.getBookedCustomerIds();
-						arrList.add(customerId);
-						eve.setBookedCustomerIds(arrList);
+						isRegistrationSuccessful = true;
 					}
 				}
 				
-				//Client 
+			}else {
+				isRegistrationSuccessful = true;
+			}
+			
+			
+
+	if(isRegistrationSuccessful) {
+		Event eve = new Event();
+		List<Event> record = new ArrayList<Event>();		
+		record = (List<Event>) servLocation.get(eventType).get(eventId);
+		for (Event event: record) {
+			bookingCapacity = event.getBookingCapacity();
+			eve.setId(event.getId());
+			eve.setEventType(event.getEventType());
+			eve.setBookedCustomerIds(event.getBookedCustomerIds());
+		}		
+		//Client
+		//Update booking capacity
+		//Update Customer Id in Event and client record
+		if(bookingCapacity>=1) {
+
+			
+			bookingCapacity-=1;
+			eve.setBookingCapacity(bookingCapacity);				
+			if(eve.getBookedCustomerIds()==null) {
+					ArrayList<String> arrList = new ArrayList<>();
+				arrList.add(customerId);
+				eve.setBookedCustomerIds(arrList);
+				isRegistrationSuccessful = true;
+			}else {
+				if(eve.getBookedCustomerIds().contains(customerId)) {
+					
+					msg="Already the event is booked by the customer";
+				}else {
+					ArrayList<String> arrList = eve.getBookedCustomerIds();
+					arrList.add(customerId);
+					eve.setBookedCustomerIds(arrList);
+					isRegistrationSuccessful = true;
+				}
+			}
+			
+			//Client 
+			if(isRegistrationSuccessful) {
 				if(eventLoc.equalsIgnoreCase("mtl")) {
 					eventRecordMTL.get(eventType).get(eventId).listIterator().next().setBookingCapacity(eve.getBookingCapacity());
 					eventRecordMTL.get(eventType).get(eventId).listIterator().next().setBookedCustomerIds(eve.getBookedCustomerIds());
@@ -530,21 +566,25 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 					eventRecordQUE.get(eventType).get(eventId).listIterator().next().setBookedCustomerIds(eve.getBookedCustomerIds());
 					System.out.println(eventRecordQUE);
 				}	
-				//Add event Id's to client record
-				
-			printMapValues(clientRecord);
-			if(!isRegistrationSuccessful)
-					msg ="Event registered successfully";
-			}else
-				msg="Event is full";			
+			}
 			
-		}
-		else
+			//Add event Id's to client record
+			
+		printMapValues(clientRecord);
+		if(isRegistrationSuccessful)
+				msg ="Event registered successfully";
+		}else
+			msg="Event is full";			
+		
+	 }
+	}	
+		else {
 			msg ="Event is not available in the server";
+		}
 		return msg;
 	}
 	
-	public String bookEvent(String customerId, String eventId, String eventType) {
+	public synchronized String bookEvent(String customerId, String eventId, String eventType) {
 		String msg = "Error!. Please try again";
 		//Storing the event details with the Key
 		String eventServLocation = eventId.substring(0,3);
@@ -584,7 +624,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 				}
 				msg  = req.returnBookEventMsg();
 			}else {
-				msg="You cannot book more than events from other servers";
+				msg="You cannot book more than 3 events from other servers";
 			}
 		}
 		
@@ -625,34 +665,43 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		System.out.println("Client Record---"+clientRecord);
 		return msg;
 	}
-	public boolean checkThreeEventsOrMore(String customerId, String eventId, String loc) throws ParseException {
+	public synchronized boolean checkThreeEventsOrMore(String customerId, String eventId, String loc) throws ParseException {
 		String cusLoc = customerId.substring(0,3);
 		boolean isBookingAllowed = false;
 		ArrayList<String> otherServerList = new ArrayList<>();
 		
 		if(!clientRecord.isEmpty()) {
-			otherServerList = clientRecord.get(customerId).listIterator().next().getBookedEventId();
-			Calendar cal= Calendar.getInstance();
-			String tempdate1=eventId.substring(4);
-			Date date1=new SimpleDateFormat("ddMMyy").parse(tempdate1); 
-		    cal.setTime(date1);
-		    int week1 =cal.get(Calendar.WEEK_OF_YEAR);
-		    int otherBookingForEvent =0;
-		    for(String eachEvent : otherServerList) {
-		    	String dateStr = eachEvent.substring(4);	    	
-		    	Date date2=new SimpleDateFormat("ddMMyy").parse(dateStr); 
-				cal.setTime(date2);
-			    int week2 =cal.get(Calendar.WEEK_OF_YEAR);
-			    if(week1==week2)
-			    {
-			    	otherBookingForEvent++;
-			    }		    	
-		    }
-		    if(otherBookingForEvent>=3) {
-		    	isBookingAllowed = false;
-		    }else {
-		    	isBookingAllowed = true;
-		    }
+			if(clientRecord.containsKey(customerId)) {
+					otherServerList = clientRecord.get(customerId).listIterator().next().getBookedEventId();
+					
+					Calendar cal= Calendar.getInstance();
+					String tempdate1=eventId.substring(4);
+					Date date1=new SimpleDateFormat("ddMMyy").parse(tempdate1); 
+				    cal.setTime(date1);
+				    int week1 =cal.get(Calendar.WEEK_OF_YEAR);
+				    int otherBookingForEvent =0;
+				    for(String eachEvent : otherServerList) {
+				    	if(cusLoc.equalsIgnoreCase(eachEvent.substring(0,3))==false) {
+				    		String dateStr = eachEvent.substring(4);	    	
+					    	Date date2=new SimpleDateFormat("ddMMyy").parse(dateStr); 
+							cal.setTime(date2);
+						    int week2 =cal.get(Calendar.WEEK_OF_YEAR);
+						    if(week1==week2)
+						    {
+						    	otherBookingForEvent++;
+						    }
+				    	}
+				    			    	
+				    }
+				    if(otherBookingForEvent>=3) {
+				    	isBookingAllowed = false;
+				    }else {
+				    	isBookingAllowed = true;
+				    
+				    }
+			}else {
+				isBookingAllowed = true;
+			}
 		}else {
 			isBookingAllowed = true;
 
@@ -661,7 +710,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 	}
 
 	
-	public String cancelEvent(String customerId, String eventId, String eventType) {
+	public synchronized String cancelEvent(String customerId, String eventId, String eventType) {
 		String msg = "Error!. Please try again";
 		//Storing the event details with the Key
 		String eventServLocation = eventId.substring(0,3);
@@ -687,32 +736,41 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 				e.printStackTrace();
 			}
 			msg  = req.returnBookEventMsg();
-			if(msg.trim().equalsIgnoreCase("Event cancelled successfully.")) {
-				clientRecord.get(customerId).listIterator().next().getBookedEventId().removeIf(e -> e.contains(eventId));
-				System.out.println(clientRecord);
-			}
 		}
+			
+		if(msg.trim().equalsIgnoreCase("Event cancelled successfully.")) {
+			System.out.println(clientRecord.get(customerId.trim()).listIterator().next().getBookedEventId());
+			if(clientRecord.containsKey(customerId)) {
+				clientRecord.get(customerId).iterator().next().getBookedEventId().removeIf(e-> e.equalsIgnoreCase(eventId.trim()));
+			}
+			System.out.println(clientRecord.get(customerId.trim()).listIterator().next().getBookedEventId().removeIf(e-> e.contains(eventId.trim())));
+			//clientRecord.get(customerId.trim()).listIterator().next().getBookedEventId().removeIf(e-> e.contains(eventId.trim()));
+			System.out.println("clientRecord"+clientRecord);
+		}
+		
 		return msg;
 	}
-	public String cancelCurrEvent(HashMap<String, HashMap<String, List<Event>>> servLocation, String customerId, String eventId, String eventType, String eventLocation) {
+	public synchronized String cancelCurrEvent(HashMap<String, HashMap<String, List<Event>>> servLocation, String customerId, String eventId, String eventType, String eventLocation) {
 		String msg = "";
 		boolean isCancelSuccess = false;
 		//increment capacity of event
 		//removee the cliend ids in two places	
 		System.out.println(eventLocation);
-		if(servLocation.containsKey(eventType) && servLocation.get(eventType).containsKey(eventId)) {
+		if(servLocation.containsKey(eventType.trim()) && servLocation.get(eventType.trim()).containsKey(eventId.trim())) {
 				//Client 
 				if(eventLocation.equalsIgnoreCase("mtl")) {
 					if(eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().contains(customerId)) {
-						System.out.println("Thhaa variya");
-						int bookingCapacityValue = eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookingCapacity()+1;
+						int bookingCapacityValue =0;
+						if(eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookingCapacity()!=0) {
+							bookingCapacityValue = eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookingCapacity();
+							bookingCapacityValue+=1;
+						}else {
+							bookingCapacityValue+=1;
+						}
 						eventRecordMTL.get(eventType).get(eventId).listIterator().next().setBookingCapacity(bookingCapacityValue);
 						eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().removeIf(e -> e.contains(customerId));
-						System.out.println("dfnkdf"+clientRecord);
-						
 						isCancelSuccess = true;
 						printMapValues(eventRecordMTL);
-						printMapValues(clientRecord);
 						
 					}else {
 						System.out.println("Sorry, This event is not booked by this customer and It cannot be cancelled");
@@ -720,39 +778,48 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 						isCancelSuccess= false;
 					}
 				}else if(eventLocation.equalsIgnoreCase("she")) {
-
-					if(eventRecordSHE.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().contains(customerId)) {
-						int bookingCapacityValue = eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookingCapacity()+1;
-						eventRecordSHE.get(eventType).get(eventId).listIterator().next().setBookingCapacity(bookingCapacityValue);						
-						eventRecordSHE.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().removeIf(e -> e.contains(eventId));						
-						//clientRecord.get(customerId).listIterator().next().getBookedEventId().removeIf(e -> e.contains(eventId));
+					if(eventRecordSHE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookedCustomerIds().contains(customerId.trim())) {
+						int bookingCapacityValue = eventRecordSHE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookingCapacity();
+						System.out.println(eventRecordSHE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookingCapacity());
+						if(bookingCapacityValue>0) {
+							bookingCapacityValue+=1;
+						}else {
+							bookingCapacityValue+=1;
+						}
+						eventRecordSHE.get(eventType.trim()).get(eventId.trim()).listIterator().next().setBookingCapacity(bookingCapacityValue);
+						eventRecordSHE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookedCustomerIds().removeIf(e -> e.contains(customerId));						
 						isCancelSuccess = true;
 						printMapValues(eventRecordSHE);
-						printMapValues(clientRecord);
 					}else {						
-
 						System.out.println("Sorry, This event is not booked by this customer and It cannot be cancelled");
 						msg="Sorry, This event is not booked by this customer and It cannot be cancelled";
 						isCancelSuccess= false;
 					}
 				}else {
 					if(eventRecordQUE.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().contains(customerId)) {
-						int bookingCapacityValue = eventRecordMTL.get(eventType).get(eventId).listIterator().next().getBookingCapacity()+1;
+						int bookingCapacityValue =0;
+						if(eventRecordQUE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookingCapacity()>0) {
+							bookingCapacityValue = eventRecordQUE.get(eventType).get(eventId).listIterator().next().getBookingCapacity();
+							bookingCapacityValue+=1;
+						}else {
+							bookingCapacityValue+=1;
+						}						
 						eventRecordQUE.get(eventType).get(eventId).listIterator().next().setBookingCapacity(bookingCapacityValue);						
-						eventRecordQUE.get(eventType).get(eventId).listIterator().next().getBookedCustomerIds().removeIf(e -> e.contains(customerId));
-						//clientRecord.get(customerId).listIterator().next().getBookedEventId().removeIf(e -> e.contains(eventId));
+						eventRecordQUE.get(eventType.trim()).get(eventId.trim()).listIterator().next().getBookedCustomerIds().removeIf(e -> e.contains(customerId));						
 						isCancelSuccess = true;
-						
+						printMapValues(eventRecordQUE);
 					}else {						
 						System.out.println("Sorry, This event is not booked by this customer and It cannot be cancelled");
 						msg="Sorry, This event is not booked by this customer and It cannot be cancelled";
 						isCancelSuccess= false;
 					}
 				}
-				if(isCancelSuccess)
+				if(isCancelSuccess) {
 					msg ="Event cancelled successfully.";
-				else
+				}
+				else {
 					msg = "Sorry, Event cancelling is unsuccessful";
+				}
 		}else {
 			
 			msg ="Event is not available in the server";
@@ -762,8 +829,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 	
 	}
 
-	public String getBookingSchedule(String customerID) {
-		String eventsBooked = null;
+	public synchronized String getBookingSchedule(String customerID) {
 		ArrayList<String> eventsList = new ArrayList<>();
 		//loop through to get ids
 		System.out.println("Event Schedule"+clientRecord.toString());
@@ -773,7 +839,7 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 		System.out.println("Event booked:"+eventsList.toString());
 		return eventsList.toString();
 	}
-	 public static String printMapValues(Map mp) {
+	 public synchronized static String printMapValues(Map mp) {
 		 String result = "";
 		    Iterator it = mp.entrySet().iterator();
 		    while (it.hasNext()) {
@@ -787,53 +853,52 @@ public class ServerImplementation extends  DEMSInterfacePOA{
 	}
 
 public synchronized String swapEvent(String CustomerID,String newEventID,String newEventType,String oldEventID,String oldEventType) {
-	//	String msg="Swap not Successful";
-		//String custserver=newEventID.substring(0,3);
 		
 		if(clientRecord.containsKey(CustomerID))
-		{
-			//clientRecord.get(CustomerID).listIterator().next().getBookedEventId().contains(oldEventID)
-			if(clientRecord.get(CustomerID).listIterator().next().getBookedEventId().contains(oldEventID))
+		{  			
+			System.out.println(clientRecord.get(CustomerID).listIterator(0).next().getBookedEventId().listIterator().next().equalsIgnoreCase(oldEventID));
+			if(clientRecord.get(CustomerID).listIterator().next().getBookedEventId().contains(oldEventID.trim()))
 			{
-
 						String replymsg=bookEvent(CustomerID,newEventID,newEventType);
-						System.out.println("reply is: "+replymsg);
-						if(replymsg.trim().equals("Event booked succesfully"))
+						System.out.println("Information 1: "+replymsg);
+						if(replymsg.trim().equals("Event registered successfully"))
 						{
-						String rep1=cancelEvent(CustomerID,oldEventID,oldEventType);
-						System.out.println("rep1"+rep1);
-						return "your events are swapped";
+							String rep1=cancelEvent(CustomerID,oldEventID,oldEventType);
+							System.out.println("Deleting rep1"+rep1);
+							return "The events are swapped!!";
 						}
-						else if(replymsg.trim().equals("You have already booked another event in the same slot! Please try a different slot")||replymsg.trim().equals("You cannot book more 3 events from other cities in a week"))
+						else if(replymsg.trim().equals("You have already booked another event in the same slot! Please try a different slot")||replymsg.trim().equals("You cannot book more than 3 events from other servers"))
 						{
-							String rep2=cancelEvent(CustomerID,oldEventID,oldEventType);
-							System.out.println("rep2"+rep2);
+							/*String rep2=cancelEvent(CustomerID,oldEventID,oldEventType);
+							System.out.println("Deleting "+rep2);
 							String replymsg1=bookEvent(CustomerID,newEventID,newEventType);
-							System.out.println("reply is: "+replymsg1);
-							if(replymsg1.trim().equals("Event booked succesfully"))
+							System.out.println("Information2: "+replymsg1);
+							if(replymsg1.trim().equals("Event registered successfully"))
 							{
-							return "events are swapped";
+								return "events are swapped";
 							}
 							else
 							{
-								bookEvent(CustomerID,oldEventID,oldEventType);
-								return replymsg1+" so events are not swapped";
-							}
+								String addingAfterDeletion = bookEvent(CustomerID,oldEventID,oldEventType);
+								System.out.println("addingAfterDeletion"+addingAfterDeletion);
+								return replymsg1+" thats why the events are not swapped";
+							}*/
+							return replymsg+"--so events are not swapped";
 						}
 						else
 						{
-							return replymsg+" so events are not swapped";
+							return replymsg+"--so events are not swapped";
 						}
 			}
 			else
 			{
-				return "you have no event bookings";
+				return "There is no event bookings";
 			}
 		
 		}
 		else
 		{
-			return "you have no event bookings";
+			return "There is no event bookings";
 		}
 	}
 }
