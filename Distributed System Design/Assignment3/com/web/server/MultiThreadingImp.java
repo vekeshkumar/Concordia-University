@@ -92,13 +92,13 @@ public class MultiThreadingImp implements Runnable{
 						String temp = null;
 						String[] data1=Arrays.copyOfRange(datas,2,datas.length+1);
 						try {
-							temp=customer(data1,obj).trim();
+							temp=customer(data1,obj);
 						} catch (ParseException e) {
 							
 							e.printStackTrace();
 						}
 						msg=managerID+":"+temp.trim();
-						System.out.println(msg);
+						System.out.println(msg.trim());
 						loginfo="\nCustomer ID:"+customerID+"\nOperations performed".trim();
 					}
 			}
@@ -127,7 +127,7 @@ public class MultiThreadingImp implements Runnable{
 			msg= obj.bookEvent(custID,eventID,eventtype);
 			loginfo="\nCustomer ID:"+custID+"\nEvent Type:"+eventtype+"\nEvent ID:"+eventID+"\n"+msg.trim();
 			System.out.println(custID+":"+msg);			
-			return loginfo;
+			return loginfo.trim();
 			
 		case "getBookingSchedule":
 			msg= obj.getBookingSchedule(custID);
@@ -141,7 +141,7 @@ public class MultiThreadingImp implements Runnable{
 			eventtype=datas[2];
 			eventID=datas[3];
 			msg= obj.cancelEvent(custID,eventID, eventtype);
-			loginfo="\nCustomer ID:"+custID+"\nEvent Type:"+eventtype+"\nEvent ID:"+eventID+"\n"+msg;
+			loginfo="\nCustomer ID:"+custID+"\nEvent Type:"+eventtype+"\nEvent ID:"+eventID+"\n"+msg.trim();
 			System.out.println(custID+":"+msg);
 			return loginfo;
 			
@@ -152,9 +152,9 @@ public class MultiThreadingImp implements Runnable{
 			neweventtype=datas[4];
 			neweventID=datas[5];
 			msg= obj.swapEvent(custID,neweventID,neweventtype,oldeventID,oldeventtype).trim();
-			loginfo="\nCustomer ID:"+custID+"\nold Event Type:"+oldeventtype+"\nold Event ID:"+oldeventID+"\nnew Event Type:"+neweventtype+"\nnew Event ID:"+neweventID+"\n"+msg;
+			loginfo="\nCustomer ID:"+custID+"\nold Event Type:"+oldeventtype+"\nold Event ID:"+oldeventID+"\nnew Event Type:"+neweventtype+"\nnew Event ID:"+neweventID+"\n"+msg.trim();
 			System.out.println(custID+":"+msg.trim());
-			return loginfo;
+			return loginfo.trim();
 			
 		}
 		return "No Operations performed";

@@ -624,9 +624,9 @@ public class ServerImplementation implements WebInterface {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				msg  = req.returnBookEventMsg();
+				msg  = req.returnBookEventMsg().trim();
 			}else {
-				msg="You cannot book more than 3 events from other servers";
+				msg="You cannot book more than 3 events from other servers".trim();
 			}
 		}
 		
@@ -649,7 +649,7 @@ public class ServerImplementation implements WebInterface {
 				if(clientRecord.containsKey(customerId)) {				
 					bookedEventIds = clientRecord.get(customerId).listIterator().next().getBookedEventId();		
 					if(bookedEventIds.contains(eventId)) {
-						msg= "Sorry, This event is already registered by the customer";
+						msg= "Sorry, This event is already registered by the customer".trim();
 					}else {
 						bookedEventIds.add(eventId);
 						eveClient.setBookedEventId(bookedEventIds);		
@@ -665,7 +665,7 @@ public class ServerImplementation implements WebInterface {
 			}
 		}
 		System.out.println("Client Record---"+clientRecord);
-		return msg;
+		return msg.trim();
 	}
 	public synchronized boolean checkThreeEventsOrMore(String customerId, String eventId, String loc) throws ParseException {
 		String cusLoc = customerId.substring(0,3);
@@ -753,7 +753,7 @@ public class ServerImplementation implements WebInterface {
 		return msg;
 	}
 	public synchronized String cancelCurrEvent(HashMap<String, HashMap<String, List<Event>>> servLocation, String customerId, String eventId, String eventType, String eventLocation) {
-		String msg = "";
+		String msg = "s";
 		boolean isCancelSuccess = false;
 		//increment capacity of event
 		//removee the cliend ids in two places	
@@ -849,8 +849,8 @@ public class ServerImplementation implements WebInterface {
 		        String value =(pair.getKey()+"="+pair.getValue().toString());
 		        result += value+"\n";
 		    }
-		    System.out.println("Print records : "+result+"\n");
-		    return result;
+		    System.out.println("Print records :"+result+"\n");
+		    return result.trim();
 		   
 	}
 
@@ -861,46 +861,32 @@ public synchronized String swapEvent(String CustomerID,String newEventID,String 
 			System.out.println(clientRecord.get(CustomerID).listIterator(0).next().getBookedEventId().listIterator().next().equalsIgnoreCase(oldEventID));
 			if(clientRecord.get(CustomerID).listIterator().next().getBookedEventId().contains(oldEventID.trim()))
 			{
-						String replymsg=bookEvent(CustomerID,newEventID,newEventType);
-						System.out.println("Information 1: "+replymsg);
-						if(replymsg.trim().equals("Event registered successfully"))
-						{
-							String rep1=cancelEvent(CustomerID,oldEventID,oldEventType);
-							System.out.println("Deleting rep1"+rep1);
-							return "The events are swapped!!";
-						}
-						else if(replymsg.trim().equals("You have already booked another event in the same slot! Please try a different slot")||replymsg.trim().equals("You cannot book more than 3 events from other servers"))
-						{
-							/*String rep2=cancelEvent(CustomerID,oldEventID,oldEventType);
-							System.out.println("Deleting "+rep2);
-							String replymsg1=bookEvent(CustomerID,newEventID,newEventType);
-							System.out.println("Information2: "+replymsg1);
-							if(replymsg1.trim().equals("Event registered successfully"))
-							{
-								return "events are swapped";
-							}
-							else
-							{
-								String addingAfterDeletion = bookEvent(CustomerID,oldEventID,oldEventType);
-								System.out.println("addingAfterDeletion"+addingAfterDeletion);
-								return replymsg1+" thats why the events are not swapped";
-							}*/
-							return replymsg+"--so events are not swapped";
-						}
-						else
-						{
-							return replymsg+"--so events are not swapped";
-						}
+				String replymsg=bookEvent(CustomerID,newEventID,newEventType);
+				System.out.println("Information 1: "+replymsg);
+				if(replymsg.trim().equals("Event registered successfully"))
+				{
+					String rep1=cancelEvent(CustomerID,oldEventID,oldEventType);
+					System.out.println("Deleting rep1"+rep1);
+					return "The events are swapped!!";
+				}
+				else if(replymsg.trim().equals("You have already booked another event in the same slot! Please try a different slot")||replymsg.trim().equals("You cannot book more than 3 events from other servers"))
+				{							
+					return replymsg+"--so events are not swapped".trim();
+				}
+				else
+				{
+					return replymsg+"--so events are not swapped".trim();
+				}
 			}
 			else
 			{
-				return "There is no event bookings";
+				return "There is no event bookings".trim();
 			}
 		
 		}
 		else
 		{
-			return "There is no event bookings";
+			return "There is no event bookings".trim();
 		}
 	}
 

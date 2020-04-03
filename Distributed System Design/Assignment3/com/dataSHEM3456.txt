@@ -130,3 +130,57 @@ Event ID:SHEE160620
 Capacity:1
 SHEM3456:
 Record added!! Success
+Apr 03, 2020 1:10:52 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:10:52 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:11:47 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:12:57 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:17:26 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:17:26 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:18:24 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:22:52 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:22:52 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 1:23:58 AM com.client.EventMainClient main
+INFO: 
+Customer ID:SHEC1234Operations performed
+Apr 03, 2020 1:24:06 AM com.client.EventMainClient main
+INFO: 
+Customer ID:SHEC1234Operations performed

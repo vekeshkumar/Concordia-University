@@ -153,3 +153,94 @@ INFO: Customer ID:QUEC1234
 Event Type:Conference
 Event ID:QUEA150620
 Event registered successfully
+Apr 03, 2020 1:11:07 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:11:07 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:11:07 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:11:07 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Conference
+Event ID:QUEA150620
+Event registered successfully
+Apr 03, 2020 1:11:33 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:QUEA150620
+new Event Type:TradeShow
+new Event ID:MTLA150620
+You cannot book more than 3 events from other servers--so events are not swapped
+Apr 03, 2020 1:11:40 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:SHEE150620 
+new Event Type:Seminar
+new Event ID:QUEA160620
+The events are swapped!!
+Apr 03, 2020 1:12:51 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:SHEE150620 
+new Event Type:Seminar
+new Event ID:QUEA160620
+There is no event bookings
+Apr 03, 2020 1:17:46 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:17:46 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:17:46 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 1:17:46 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Conference
+Event ID:QUEA150620
+Event registered successfully
+Apr 03, 2020 1:18:13 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:QUEA150620
+new Event Type:TradeShow
+new Event ID:MTLA150620
+You cannot book more than 3 events from other servers--so events are not swapped
+Apr 03, 2020 1:18:18 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:SHEE150620 
+new Event Type:Seminar
+new Event ID:QUEA160620
+The events are swapped!!
+Apr 03, 2020 1:23:08 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Conference
+Event ID:SHEE150620
+Event registered successfully
+Apr 03, 2020 1:23:08 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Seminar
+Event ID:SHEE160620
+Event registered successfully
+Apr 03, 2020 1:23:08 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Conference
+Event ID:MTLA160620
+Event registered successfully
+Apr 03, 2020 1:23:08 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+Event Type:Conference
+Event ID:QUEA150620
+Event registered successfully
+Apr 03, 2020 1:23:40 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:QUEA150620
+new Event Type:TradeShow
+new Event ID:MTLA150620
+You cannot book more than 3 events from other servers--so events are not swapped
+Apr 03, 2020 1:23:52 AM com.client.EventMainClient main
+INFO: Customer ID:QUEC1234
+old Event Type:Conference
+old Event ID:SHEE150620 
+new Event Type:Seminar
+new Event ID:QUEA160620
+The events are swapped!!
