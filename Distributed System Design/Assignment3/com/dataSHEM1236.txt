@@ -1,0 +1,112 @@
+Apr 02, 2020 3:24:37 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 3:31:07 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 3:33:23 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 6:26:11 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 6:29:39 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 6:37:23 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 6:56:53 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 6:59:25 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 7:03:22 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 8:51:21 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Error!. Please try again
+Apr 02, 2020 10:57:05 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success
+Apr 02, 2020 11:05:56 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success
+Apr 02, 2020 11:08:12 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success
+Apr 02, 2020 11:09:31 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success
+Apr 02, 2020 11:12:11 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success
+Apr 02, 2020 11:12:18 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEM100420
+Capacity:10
+SHEM1236:
+Record added!! Success

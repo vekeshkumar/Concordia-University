@@ -1,0 +1,168 @@
+Apr 02, 2020 11:18:42 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:18:42 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:18:42 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:54:25 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:54:25 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:54:25 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:57:16 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:57:16 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 02, 2020 11:57:16 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:08:31 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:08:31 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:08:31 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:25:16 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:25:16 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:25:16 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:26:58 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:26:58 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:26:58 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:28:01 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:28:01 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:28:01 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:38:12 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:MTLA160620
+Capacity:2
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:38:12 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA150620
+Capacity:1
+MTLM9000:
+Record added!! Success
+Apr 03, 2020 12:38:12 AM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+Event ID:MTLA170620
+Capacity:1
+MTLM9000:
+Record added!! Success

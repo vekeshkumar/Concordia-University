@@ -1,0 +1,112 @@
+Apr 02, 2020 11:18:49 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 02, 2020 11:18:49 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 02, 2020 11:54:30 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 02, 2020 11:54:30 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 02, 2020 11:57:20 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 02, 2020 11:57:20 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:08:35 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:08:35 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:25:20 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:25:20 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:27:02 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:27:02 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:28:04 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:28:04 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:38:16 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:QUEA150620
+Capacity:1
+QUEM9000:
+Record added!! Success
+Apr 03, 2020 12:38:16 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:QUEA160620
+Capacity:1
+QUEM9000:
+Record added!! Success

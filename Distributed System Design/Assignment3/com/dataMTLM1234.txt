@@ -1,0 +1,228 @@
+Mar 26, 2020 8:33:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:36:18 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:38:35 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:40:06 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:41:01 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:44:24 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:45:06 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:49:06 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 8:51:05 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:19 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 12:18:55 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 12:42:05 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:18:35 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:20:25 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:21:47 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:24:37 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:31:07 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 3:33:23 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 6:26:10 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 6:29:39 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 6:37:23 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 6:56:53 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 6:59:25 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 7:03:22 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 8:54:50 PM com.web.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 9:10:17 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 9:10:55 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 9:15:43 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 9:19:39 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 9:22:39 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 10:08:02 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 10:08:35 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 10:45:55 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 10:57:05 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 11:05:56 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 11:08:12 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 11:09:31 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 11:10:57 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success
+Apr 02, 2020 11:12:11 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:MTLM100420
+Capacity:10
+MTLM1234:
+Record added!! Success

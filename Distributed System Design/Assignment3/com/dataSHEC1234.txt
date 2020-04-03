@@ -1,0 +1,32 @@
+Apr 02, 2020 11:01:20 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:01:20 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:06:04 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:06:04 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:09:39 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:12:18 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:12:18 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:19:41 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:20:03 PM com.client.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Schedule
+Apr 02, 2020 11:20:43 PM com.client.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Schedule
+Apr 02, 2020 11:55:52 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:59:05 PM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:08:55 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:38:50 AM com.client.EventMainClient main
+INFO: null

@@ -1,0 +1,12 @@
+Apr 02, 2020 11:20:56 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+List of Events available
+Apr 02, 2020 11:20:56 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+List of Events available
+Apr 02, 2020 11:20:56 PM com.client.EventMainClient main
+INFO: 
+Event Type:TradeShow
+List of Events available

@@ -1,0 +1,70 @@
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Mar 26, 2020 9:19:34 PM com.web.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 10:57:50 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:01:20 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event is not available in the server
+Apr 02, 2020 11:06:04 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully
+Apr 02, 2020 11:08:36 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully
+Apr 02, 2020 11:09:39 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully
+Apr 02, 2020 11:12:18 PM com.client.EventMainClient main
+INFO: 
+Customer ID:MTLC1234
+Event Type:Seminar
+Event ID:MTLM100420
+Event registered successfully

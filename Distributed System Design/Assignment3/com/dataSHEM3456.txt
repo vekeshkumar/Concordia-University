@@ -1,0 +1,132 @@
+Apr 02, 2020 11:18:28 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:18:29 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:21:16 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:21:34 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:21:42 PM com.client.EventMainClient main
+INFO: 
+Customer ID:SHEC1234
+Operations performed
+Apr 02, 2020 11:36:18 PM com.client.EventMainClient main
+INFO: null
+Apr 02, 2020 11:54:19 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:54:19 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:57:11 PM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:57:11 PM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 02, 2020 11:59:51 PM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:00:54 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:01:57 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:04:06 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:08:26 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:08:26 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:09:21 AM com.client.EventMainClient main
+INFO: null
+Apr 03, 2020 12:25:11 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:25:11 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:26:54 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:26:54 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:27:56 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:27:56 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:38:08 AM com.client.EventMainClient main
+INFO: 
+Event Type:Conference
+Event ID:SHEE150620
+Capacity:2
+SHEM3456:
+Record added!! Success
+Apr 03, 2020 12:38:08 AM com.client.EventMainClient main
+INFO: 
+Event Type:Seminar
+Event ID:SHEE160620
+Capacity:1
+SHEM3456:
+Record added!! Success
