@@ -1,0 +1,9 @@
+INFO - Sat Mar 21 22:26:22 EDT 2020 - List event Availability- MTLM1122 - Seminars - Time Out from all 3 RMs..
+INFO - Sun Mar 22 00:13:11 EDT 2020 - List event Availability- MTLM1122 - Seminars - Time Out from all 3 RMs..
+INFO - Sat Apr 11 17:16:44 EDT 2020 - List event Availability- MTLM1122 - TradeShow - Time Out from all 3 RMs..
+INFO - Sat Apr 11 17:18:14 EDT 2020 - List event Availability- MTLM1122 - TradeShow - Time Out from all 3 RMs..
+INFO - Sat Apr 11 17:23:30 EDT 2020 - List event Availability- MTLM1122 - TradeShow - Time Out from all 3 RMs..
+INFO - Sun Apr 12 13:54:21 EDT 2020 - List event Availability- MTLM1122 - Seminar - {MTLM091120=18, MTLM101220=27}
+INFO - Sun Apr 12 14:05:16 EDT 2020 - List event Availability- MTLM1122 - Seminar - {MTLM091120=25, MTLM151120=30}
+INFO - Sun Apr 12 15:04:12 EDT 2020 - List event Availability- MTLM1122 - Seminar - {MTLM091120=25}
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List event Availability- MTLM1122 - Seminar - {MTLM091120=25}

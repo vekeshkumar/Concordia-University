@@ -1,0 +1,6 @@
+INFO - Tue Apr 14 13:53:46 EDT 2020 - List event Availability- MTLM2299 - Seminar - {MTLM150820=14, MTLM160820=15, MTLM170820=17}
+INFO - Tue Apr 14 14:41:41 EDT 2020 - List event Availability- MTLM2299 - Seminar - Time Out from all 3 RMs..
+INFO - Sat Apr 18 22:10:26 EDT 2020 - List event Availability- MTLM2299 - Seminar - {}
+INFO - Sat Apr 18 22:28:15 EDT 2020 - List event Availability- MTLM2299 - Seminar - {}
+INFO - Sat Apr 18 22:33:50 EDT 2020 - List event Availability- MTLM2299 - Seminar - {}
+INFO - Sat Apr 18 23:01:52 EDT 2020 - List event Availability- MTLM2299 - TradeShow - {MTLM250820=11, MTLM260820=14}

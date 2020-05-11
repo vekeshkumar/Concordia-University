@@ -1,0 +1,2 @@
+ID,methodName,eventType,eventID,oldEventType,oldEventID,bookingCapacity,CID
+MTLM1255,addEvent,Seminar,MTLM010920,,,25

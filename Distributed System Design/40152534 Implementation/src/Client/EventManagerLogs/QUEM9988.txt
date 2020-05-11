@@ -1,0 +1,34 @@
+INFO - Wed Mar 11 14:34:16 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 1 - Hello from Add Event
+INFO - Tue Mar 17 11:32:52 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 10 - Process is crashed
+INFO - Tue Mar 17 17:54:30 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 10 - Process is crashed
+INFO - Wed Mar 18 19:16:13 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:22:59 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Cannot add other citi's event
+INFO - Wed Mar 18 19:41:37 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:47:51 EDT 2020 - Add event - QUEM9988 - Conferences - QUEE081120 - 101 - Success
+INFO - Wed Mar 18 19:48:44 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM021220 - 14 - PROCESS_CRASH|RM02
+INFO - Wed Mar 18 20:18:05 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM021220 - 14 - Success
+INFO - Wed Mar 18 20:18:56 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM050820 - 100 - Success
+INFO - Wed Mar 18 20:19:44 EDT 2020 - Add event - QUEM9988 - Conferences - QUEA150920 - 75 - Success
+INFO - Wed Mar 18 20:20:28 EDT 2020 - Add event - QUEM9988 - Trade Shows - QUEM011020 - 443 - Success
+INFO - Thu Mar 19 20:06:46 EDT 2020 - Add event - QUEM9988 - TradeShow - QUEM150820 - 30 - PROCESS_CRASH|RM03|RM01|RM02
+INFO - Wed Mar 25 17:04:34 EDT 2020 - Add event - QUEM9988 - Seminar - QUEM290620 - 14 - Failure
+INFO - Wed Mar 25 17:46:33 EDT 2020 - Add event - QUEM9988 - Seminar - QUEM290620 - 74 - Time Out from all 3 RMs..
+INFO - Wed Mar 25 17:47:31 EDT 2020 - Add event - QUEM9988 - Seminar - QUEM290620 - 74 - Time Out from all 3 RMs..
+INFO - Wed Mar 25 17:48:56 EDT 2020 - Add event - QUEM9988 - Seminar - QUEM290620 - 74 - Failure
+INFO - Sat Mar 28 01:14:19 EDT 2020 - Add event - QUEM9988 - Seminars - QUEM290620 - 10 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM300620 - 11 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM280620 - 12 - Success
+INFO - Wed Apr 01 21:07:20 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 11:15:10 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Time Out from all 3 RMs..
+INFO - Thu Apr 02 11:23:38 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 11:49:40 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 11:50:55 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 12:03:48 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Time Out from all 3 RMs..
+INFO - Thu Apr 02 12:07:26 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 14:02:36 EDT 2020 - Add event - QUEM9988 - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 18:44:47 EDT 2020 - Add event - QUEM9988 - Seminars - SHEM300820 - 14 - Cannot add other citi's event
+INFO - Thu Apr 02 18:52:10 EDT 2020 - Add event - QUEM9988 - Seminars - SHEM300820 - 14 - Cannot add other citi's event
+INFO - Thu Apr 02 19:05:23 EDT 2020 - Add event - QUEM9988 - Seminars - SHEM300820 - 14 - Cannot add other citi's event
+INFO - Thu Apr 02 19:22:21 EDT 2020 - Add event - QUEM9988 - Seminars - SHEM300820 - 14 - Cannot add other citi's event
+INFO - Thu Apr 02 19:26:24 EDT 2020 - Add event - QUEM9988 - Seminars - SHEM300820 - 14 - Cannot add other citi's event

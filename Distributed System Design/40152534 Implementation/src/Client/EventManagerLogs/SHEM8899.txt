@@ -1,0 +1,2 @@
+INFO - Mon Apr 20 19:13:43 EDT 2020 - Remove event - SHEM8899 - Seminar - SHE050920 - Failure
+INFO - Sat Apr 25 14:31:40 EDT 2020 - Remove event - SHEM8899 - Seminar - SHEM030920 - Success

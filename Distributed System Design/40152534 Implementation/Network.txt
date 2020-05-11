@@ -1,0 +1,28 @@
+*ServiceName,UDPCall,RunningIP,RunningPort
+*
+*Send to Sequencer (Request Object)
+FRONTEND,UNICASTSEND,127.0.0.1,8000
+*
+*Receive from RMs (Result Object)
+FRONTEND,UNICASTRECEIVE,127.0.0.1,8006
+*
+*Receive from FrontEnd (Request Object)
+SEQUENCER,UNICASTRECEIVE,127.0.0.1,8001
+*
+*Send to RMs (Request Object)
+SEQUENCER,MULTICAST,230.1.0.0,8002
+*
+*Receive from Sequencer and Send to other RMs (Request Object)
+RM01,MULTICAST,230.1.0.0,8002
+RM02,MULTICAST,230.1.0.0,8002
+RM03,MULTICAST,230.1.0.0,8002
+*
+*Send to FrontEnd (Result Object), Send to Other RMs (LogData Object)
+RM01,UNICASTSEND,127.0.0.1,8003
+RM02,UNICASTSEND,127.0.0.1,8004
+RM03,UNICASTSEND,127.0.0.1,8005
+*
+*Receive from Other RMs (LogData Object)
+RM01,UNICASTRECEIVE,127.0.0.1,9985
+RM02,UNICASTRECEIVE,132.205.94.137,9986
+RM03,UNICASTRECEIVE,132.205.94.108,9987

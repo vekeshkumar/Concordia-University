@@ -1,0 +1,4 @@
+INFO - Fri Mar 27 19:01:27 EDT 2020 - Book Event- MTLC1005 - Trade Shows - MTLA151020 - Success
+INFO - Tue Apr 14 14:27:38 EDT 2020 - Book Event- MTLC1005 - Seminar - MTLM250820 - Failure
+INFO - Tue Apr 14 14:29:51 EDT 2020 - Book Event- MTLC1005 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 14:38:28 EDT 2020 - Get Booking Schedule- MTLC1005 - [MTLM170820]

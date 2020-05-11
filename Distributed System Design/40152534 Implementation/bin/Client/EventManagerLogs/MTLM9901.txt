@@ -1,0 +1,3 @@
+INFO - Thu Mar 26 23:22:19 EDT 2020 - Add event - MTLM9901 - Seminars - MTLA151120 - 115 - Success
+INFO - Thu Mar 26 23:36:32 EDT 2020 - Add event - MTLM9901 - Seminars - MTLA151120 - 115 - Success
+INFO - Thu Mar 26 23:43:19 EDT 2020 - Add event - MTLM9901 - Seminars - MTLA151120 - 115 - Success

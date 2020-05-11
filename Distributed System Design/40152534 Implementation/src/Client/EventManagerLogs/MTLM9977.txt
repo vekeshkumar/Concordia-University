@@ -1,0 +1,20 @@
+INFO - Tue Mar 17 01:37:56 EDT 2020 - Add event - MTLM9977 - Conferences - MTL170620 - 10 - Process is crashed
+INFO - Tue Mar 17 01:54:45 EDT 2020 - Add event - MTLM9977 - Conferences - MTL150620 - 100 - Process is crashed
+INFO - Tue Mar 17 02:08:13 EDT 2020 - Add event - MTLM9977 - Conferences - MTL050820 - 200 - Process is crashed
+INFO - Tue Mar 17 02:20:33 EDT 2020 - Add event - MTLM9977 - Conferences - MTL240820 - 300 - Process is crashed
+INFO - Tue Mar 17 02:32:15 EDT 2020 - Add event - MTLM9977 - Seminars - MTL020820 - 400 - Process is crashed
+INFO - Tue Mar 17 02:34:19 EDT 2020 - Add event - MTLM9977 - Seminars - MTL070820 - 99 - Process is crashed
+INFO - Tue Mar 17 02:34:38 EDT 2020 - Add event - MTLM9977 - Seminars - MTL010920 - 8 - Process is crashed
+INFO - Wed Mar 25 20:50:07 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Time Out from all 3 RMs..
+INFO - Wed Mar 25 20:52:05 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Failure
+INFO - Wed Mar 25 21:08:49 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Failure
+INFO - Wed Mar 25 21:18:23 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Wed Mar 25 21:26:02 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Time Out from all 3 RMs..
+INFO - Wed Mar 25 22:50:34 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Wed Mar 25 22:59:07 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Wed Mar 25 23:10:25 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Failure
+INFO - Wed Mar 25 23:14:27 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Thu Mar 26 22:03:45 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Thu Mar 26 22:20:06 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Thu Mar 26 22:33:22 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success
+INFO - Thu Mar 26 22:43:16 EDT 2020 - Add event - MTLM9977 - Trade Shows - MTLM150820 - 14 - Success

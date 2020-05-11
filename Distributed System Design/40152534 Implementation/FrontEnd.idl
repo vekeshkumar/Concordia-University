@@ -1,0 +1,8 @@
+module FrontEndApp
+{
+	interface FrontEndServer
+	{
+		string sendtoFE (in string message);
+		oneway void shutdown();
+	};
+};

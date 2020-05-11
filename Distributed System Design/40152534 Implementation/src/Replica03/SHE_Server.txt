@@ -1,0 +1,296 @@
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - Trade Shows - SHEM250720 - 15 - Success
+INFO - Wed Mar 25 17:02:52 EDT 2020 - Add event - Seminar - SHEM290620 - 25 - Success
+INFO - Wed Mar 25 17:04:34 EDT 2020 - Add event - Seminar - QUEM290620 - 14 - Success
+INFO - Thu Mar 26 22:48:12 EDT 2020 - Add event - Conferences - SHEE081220 - 12 - Success
+INFO - Thu Mar 26 22:53:31 EDT 2020 - Add event - Trade Shows - MTLE140920 - 73 - Success
+INFO - Thu Mar 26 22:59:38 EDT 2020 - Add event - Seminars - SHEA151120 - 150 - Success
+INFO - Thu Mar 26 23:01:26 EDT 2020 - Add event - Trade Shows - MTLE140920 - 177 - Success
+INFO - Fri Mar 27 11:53:13 EDT 2020 - Add event - Seminars - SHEM151020 - 55 - Success
+INFO - Fri Mar 27 11:53:13 EDT 2020 - Add event - Trade Shows - MTLA151020 - 108 - Success
+INFO - Fri Mar 27 17:55:39 EDT 2020 - Add event - Seminars - SHEM151020 - 55 - Success
+INFO - Fri Mar 27 18:01:14 EDT 2020 - Add event - Seminars - SHEM151020 - 55 - Success
+INFO - Fri Mar 27 18:01:14 EDT 2020 - Add event - Trade Shows - MTLA151020 - 108 - Success
+INFO - Sat Mar 28 01:17:06 EDT 2020 - Add event - Seminars - SHEM021120 - 16 - Success
+INFO - Sat Mar 28 01:17:06 EDT 2020 - Add event - Trade Shows - MTLM290820 - 47 - Success
+INFO - Sat Mar 28 01:17:06 EDT 2020 - Add event - Seminars - SHEM011120 - 15 - Success
+INFO - Sat Mar 28 01:17:07 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Sat Mar 28 01:17:07 EDT 2020 - Add event - Seminars - SHEM031120 - 17 - Success
+INFO - Sat Mar 28 01:17:07 EDT 2020 - Add event - Trade Shows - MTLM310820 - 46 - Success
+INFO - Wed Apr 01 21:07:11 EDT 2020 - Add event - Seminars - SHEM011120 - 15 - Success
+INFO - Wed Apr 01 21:07:12 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Thu Apr 02 00:56:43 EDT 2020 - Add event - Seminars - SHEM011120 - 15 - Success
+INFO - Thu Apr 02 10:50:50 EDT 2020 - Add event - Seminars - SHEM011120 - 15 - Success
+INFO - Thu Apr 02 11:15:11 EDT 2020 - Add event - Seminars - SHEM011120 - 15 - Success
+INFO - Thu Apr 02 11:55:27 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 12:01:56 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 12:03:48 EDT 2020 - Add event - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 12:03:49 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Thu Apr 02 12:08:42 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 13:58:26 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 13:59:10 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 13:59:10 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Thu Apr 02 14:01:17 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 14:01:17 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Thu Apr 02 14:02:36 EDT 2020 - Add event - Conferences - QUEM290620 - 10 - Success
+INFO - Thu Apr 02 16:06:19 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 16:06:21 EDT 2020 - Add event - Trade Shows - MTLM300820 - 45 - Success
+INFO - Thu Apr 02 16:18:03 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 16:38:18 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 16:44:50 EDT 2020 - Add event - Conferences - SHEA101120 - 15 - Success
+INFO - Thu Apr 02 16:58:32 EDT 2020 - Add event - Trade Shows - MTLM300820 - 20 - Success
+INFO - Thu Apr 02 19:07:42 EDT 2020 - Add event - Conferences - SHEM300820 - 12 - Success
+INFO - Thu Apr 02 19:23:13 EDT 2020 - Add event - Seminars - SHEM300820 - 14 - Success
+INFO - Thu Apr 02 19:26:23 EDT 2020 - Add event - Seminars - SHEM300820 - 14 - Success
+INFO - Thu Apr 02 19:26:23 EDT 2020 - Add event - Seminars - SHEM300820 - 14 - Cannot add other citi's event
+INFO - Thu Apr 02 19:26:23 EDT 2020 - Add event - Trade Shows - MTLM300820 - 20 - Success
+INFO - Sat Apr 04 19:09:54 EDT 2020 - Book Event- MTLC5001 - Trade Shows - SHEM300820 - eventType Trade Shows doesn't exist
+INFO - Sat Apr 04 19:09:54 EDT 2020 - Book Event- MTLC5001 - Trade Shows - SHEM300820 - eventType Trade Shows doesn't exist
+
+INFO - Sat Apr 04 19:09:56 EDT 2020 - Book Event- MTLC5001 - Seminars - QUEA051120 - eventType Seminars doesn't exist
+INFO - Sat Apr 04 19:09:56 EDT 2020 - Book Event- MTLC5001 - Seminars - QUEA051120 - eventType Seminars doesn't exist
+
+INFO - Sat Apr 11 17:23:30 EDT 2020 - List event Availability- TradeShow - Success
+INFO - Sat Apr 11 17:23:32 EDT 2020 - List Event Availability- TradeShow - Success
+INFO - Sun Apr 12 13:54:21 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 13:54:21 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 13:54:21 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 14:05:16 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 14:05:16 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 14:05:16 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 14:07:18 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM091120 - Success
+INFO - Sun Apr 12 14:08:36 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM151120 - Success
+INFO - Sun Apr 12 14:09:34 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Sun Apr 12 14:12:29 EDT 2020 - Cancel Event- MTLC1001 - Seminar - MTLM091120 - Success
+INFO - Sun Apr 12 14:13:08 EDT 2020 - Cancel Event- MTLC1001 - Seminar - MTLM151120 - Success
+INFO - Sun Apr 12 14:15:46 EDT 2020 - Get Booking Schedule- MTLC1001 - You haven't booked any events yet..
+INFO - Sun Apr 12 15:04:12 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:04:12 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:04:12 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:05:24 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:06:44 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:47 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:47 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:47 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:47 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:48 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:07:48 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 15:08:22 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 17:28:28 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 17:28:28 EDT 2020 - List event Availability- Seminar - Success
+INFO - Sun Apr 12 17:28:28 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Sun Apr 12 17:30:48 EDT 2020 - Get Booking Schedule- MTLC1002 - You haven't booked any events yet..
+INFO - Tue Apr 14 13:20:03 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:20:03 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Tue Apr 14 13:21:59 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM160820 - Customer MTLC1001 has already booked the event Seminar - MTLM160820
+INFO - Tue Apr 14 13:26:42 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM150820 - Customer MTLC1001 has already booked the event Seminar - MTLM150820
+INFO - Tue Apr 14 13:31:27 EDT 2020 - Get Booking Schedule- MTLC1002 - You haven't booked any events yet..
+INFO - Tue Apr 14 13:34:02 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Tue Apr 14 13:51:31 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:51:31 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:51:31 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Tue Apr 14 13:52:45 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:52:45 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:52:46 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Tue Apr 14 13:53:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:53:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 13:53:44 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Tue Apr 14 13:57:17 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 13:57:17 EDT 2020 - Remove event - Seminar - MTLM160820 - Success
+INFO - Tue Apr 14 13:59:10 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Tue Apr 14 14:02:03 EDT 2020 - Add event - Conference - MTLM250820 - 5 - Success
+INFO - Tue Apr 14 14:04:26 EDT 2020 - Book Event- MTLC1001 - Conference - MTLM250820 - Success
+INFO - Tue Apr 14 14:04:26 EDT 2020 - Cancel Event- MTLC1001 - Seminar - MTLM150820 - Success
+INFO - Tue Apr 14 14:04:26 EDT 2020 - Swap Event- MTLC1001 - Conference - MTLM250820 - Seminar - MTLM150820 - Success
+INFO - Tue Apr 14 14:06:05 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Tue Apr 14 14:10:29 EDT 2020 - Cancel Event- MTLC1001 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 14:12:06 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Tue Apr 14 14:18:41 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 14:20:36 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM170820 - Customer MTLC1001 has already booked the event Seminar - MTLM170820
+INFO - Tue Apr 14 14:21:58 EDT 2020 - Book Event- MTLC1002 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 14:27:37 EDT 2020 - Book Event- MTLC1005 - Seminar - MTLM250820 - The eventID you are trying to book doesn't exist
+INFO - Tue Apr 14 14:29:51 EDT 2020 - Book Event- MTLC1005 - Seminar - MTLM170820 - Success
+INFO - Tue Apr 14 14:38:27 EDT 2020 - Get Booking Schedule- MTLC1005 - Success
+INFO - Tue Apr 14 14:41:40 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 14:41:41 EDT 2020 - List event Availability- Seminar - Success
+INFO - Tue Apr 14 14:41:41 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Tue Apr 14 15:17:11 EDT 2020 - Book Event- SHEC1001 - Conference - MTLM250820 - Success
+INFO - Tue Apr 14 15:47:29 EDT 2020 - List event Availability- Conference - Success
+INFO - Tue Apr 14 15:47:29 EDT 2020 - List Event Availability- Conference - Success
+INFO - Tue Apr 14 15:47:32 EDT 2020 - Book Event- QUEC1001 - Conference - MTLM250820 - Success
+INFO - Tue Apr 14 15:47:33 EDT 2020 - Book Event- QUEC1001 - Conference - MTLM250820 - Success
+INFO - Tue Apr 14 15:47:34 EDT 2020 - Book Event- MTLC1001 - Conference - MTLM250820 - Success
+INFO - Tue Apr 14 15:47:35 EDT 2020 - Get Booking Schedule- SHEC1001 - You haven't booked any events yet..
+INFO - Tue Apr 14 15:47:35 EDT 2020 - Get Booking Schedule- QUEC1001 - Success
+INFO - Tue Apr 14 15:47:36 EDT 2020 - Get Booking Schedule- MTLC1001 - Success
+INFO - Tue Apr 14 15:47:38 EDT 2020 - Book Event- SHEC1001 - Conference - MTLM250820 - The event - Conference - MTLM250820 is full
+INFO - Tue Apr 14 15:47:39 EDT 2020 - Book Event- SHEC1001 - Conference - MTLM250820 - The event - Conference - MTLM250820 is full
+
+INFO - Tue Apr 14 16:05:36 EDT 2020 - Book Event- SHEC1001 - Conference - MTLM250820 - The event - Conference - MTLM250820 is full
+
+INFO - Tue Apr 14 16:05:36 EDT 2020 - Add event - Conference - MTLM250820 - 1 - Success
+INFO - Tue Apr 14 16:10:39 EDT 2020 - Book Event- SHEC1001 - Conference - MTLM250820 - Success
+INFO - Thu Apr 23 15:50:55 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:50:55 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:50:55 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 15:57:02 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:57:02 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:57:02 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 15:57:35 EDT 2020 - Add event - Seminar - MTLM030920 - 10 - Success
+INFO - Thu Apr 23 15:58:00 EDT 2020 - Add event - Seminar - MTLM030920 - 15 - Success
+INFO - Thu Apr 23 15:58:34 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:58:34 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 15:58:34 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 16:00:06 EDT 2020 - Remove event - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:00:56 EDT 2020 - Book Event- QUEC1001 - Seminar - MTLM030920 - Success
+INFO - Thu Apr 23 16:00:56 EDT 2020 - Book Event- QUEC1001 - Seminar - MTLM030920 - Success
+INFO - Thu Apr 23 16:04:56 EDT 2020 - Book Event- MTLC1001 - Seminar - MTLM030920 - Success
+INFO - Thu Apr 23 16:05:51 EDT 2020 - Book Event- SHEC1001 - Seminar - MTLM030920 - Success
+INFO - Thu Apr 23 16:05:51 EDT 2020 - Book Event- SHEC1001 - Seminar - MTLM030920 - Success
+INFO - Thu Apr 23 16:08:35 EDT 2020 - Book Event- SHEC1001 - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:08:56 EDT 2020 - Book Event- QUEC1001 - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:08:56 EDT 2020 - Book Event- QUEC1001 - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:40:04 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Thu Apr 23 16:40:29 EDT 2020 - Book Event- MTLC1002 - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:43:42 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Thu Apr 23 16:43:58 EDT 2020 - Book Event- MTLC1002 - Seminar - MTLM010920 - Success
+INFO - Thu Apr 23 16:45:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 16:45:44 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 16:45:44 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 16:53:24 EDT 2020 - Add event - Seminar - SHEM150820 - 15 - Success
+INFO - Thu Apr 23 16:54:09 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM150820 - Success
+INFO - Thu Apr 23 16:58:04 EDT 2020 - Add event - Seminar - SHEM160820 - 20 - Success
+INFO - Thu Apr 23 16:58:38 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 16:58:38 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 16:58:38 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 17:00:05 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM160820 - Success
+INFO - Thu Apr 23 17:04:14 EDT 2020 - Add event - Seminar - SHEM030920 - 20 - Success
+INFO - Thu Apr 23 17:05:00 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Thu Apr 23 17:06:19 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:06:19 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:06:19 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 17:07:12 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Thu Apr 23 17:07:12 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Thu Apr 23 17:09:00 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:09:00 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:09:00 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 17:10:16 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Thu Apr 23 17:18:08 EDT 2020 - Add event - Seminar - SHEM030920 - 20 - Success
+INFO - Thu Apr 23 17:18:33 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Thu Apr 23 17:22:30 EDT 2020 - Add event - Seminar - SHEM030920 - 20 - Success
+INFO - Thu Apr 23 17:22:49 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Thu Apr 23 17:25:36 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Thu Apr 23 17:25:55 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM040920 - Success
+INFO - Thu Apr 23 17:26:51 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:26:51 EDT 2020 - List event Availability- Seminar - Success
+INFO - Thu Apr 23 17:26:51 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Thu Apr 23 17:27:17 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 15:15:55 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 15:17:01 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM040920 - Success
+INFO - Fri Apr 24 15:17:25 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM040920 - Customer SHEC1002 has already booked the event Seminar - SHEM040920
+INFO - Fri Apr 24 16:11:56 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:12:25 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 16:13:11 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 16:25:09 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:25:24 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 16:28:29 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:28:44 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 16:35:20 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:35:36 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 16:40:19 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:40:39 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 16:41:25 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 16:42:15 EDT 2020 - Book Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 16:42:15 EDT 2020 - Book Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 16:42:53 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 16:43:28 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 16:43:28 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 16:44:35 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 16:48:47 EDT 2020 - Cancel Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 16:48:47 EDT 2020 - Cancel Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 16:52:53 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 16:53:13 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 16:53:13 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 16:53:33 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Customer SHEC1002 has already booked the event Seminar - QUEM020920
+INFO - Fri Apr 24 17:41:15 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 17:41:41 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 17:41:41 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 17:42:06 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Customer SHEC1002 has already booked the event Seminar - QUEM020920
+INFO - Fri Apr 24 17:43:56 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 17:50:34 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 17:50:34 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 17:50:34 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:09:54 EDT 2020 - List Event Availability- Seminar - Success
+INFO - Fri Apr 24 18:12:07 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 18:12:07 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 18:12:07 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 18:12:07 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 18:12:07 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 18:14:21 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:14:21 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:14:21 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:14:21 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:14:21 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:41:26 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 18:41:26 EDT 2020 - Add event - Seminar - QUEM020920 - 10 - Success
+INFO - Fri Apr 24 18:55:48 EDT 2020 - Add event - Seminar - SHEM040920 - 25 - Success
+INFO - Fri Apr 24 18:57:49 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 18:57:49 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 18:59:16 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Customer SHEC1002 has already booked the event Seminar - QUEM020920
+INFO - Fri Apr 24 19:01:52 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 19:03:35 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 19:11:54 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 19:11:54 EDT 2020 - Add event - Seminar - MTLM010920 - 5 - Success
+INFO - Fri Apr 24 19:12:40 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 19:44:12 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 20:06:54 EDT 2020 - Add event - Seminar - SHEM030920 - 15 - Success
+INFO - Fri Apr 24 20:07:23 EDT 2020 - Book Event- SHEC1002 - Seminar - SHEM030920 - Success
+INFO - Fri Apr 24 20:08:35 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 20:09:32 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 20:09:32 EDT 2020 - Book Event- SHEC1002 - Seminar - QUEM020920 - Success
+INFO - Fri Apr 24 20:10:54 EDT 2020 - Get Booking Schedule- SHEC1002 - Success
+INFO - Fri Apr 24 20:11:42 EDT 2020 - Book Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 20:11:42 EDT 2020 - Book Event- SHEC1002 - Seminar - MTLM010920 - Success
+INFO - Fri Apr 24 21:05:01 EDT 2020 - Get Booking Schedule- SHEC1002 - Success

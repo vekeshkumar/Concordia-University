@@ -1,0 +1,6 @@
+INFO - Sat Apr 04 19:03:13 EDT 2020 - Book Event- MTLC5001 - Trade Shows - SHEM300820 - Time Out from all 3 RMs..
+INFO - Sat Apr 04 19:03:13 EDT 2020 - Book Event- MTLC5001 - Seminars - QUEA051120 - Time Out from all 3 RMs..
+INFO - Sat Apr 04 19:04:41 EDT 2020 - Book Event- MTLC5001 - Trade Shows - SHEM300820 - Time Out from all 3 RMs..
+INFO - Sat Apr 04 19:04:41 EDT 2020 - Book Event- MTLC5001 - Seminars - QUEA051120 - Time Out from all 3 RMs..
+INFO - Sat Apr 04 19:09:54 EDT 2020 - Book Event- MTLC5001 - Trade Shows - SHEM300820 - Time Out from all 3 RMs..
+INFO - Sat Apr 04 19:09:54 EDT 2020 - Book Event- MTLC5001 - Seminars - QUEA051120 - Time Out from all 3 RMs..

@@ -1,0 +1,21 @@
+INFO - Sun Apr 12 15:07:48 EDT 2020 - List event Availability- MTLM1155 - Seminar - {MTLM091120=25}
+INFO - Mon Apr 13 14:49:04 EDT 2020 - Add event - MTLM1155 - Seminars - MTLE010820 - 14 - Success| 14
+INFO - Mon Apr 13 14:55:54 EDT 2020 - Add event - MTLM1155 - Seminars - MTLE010820 - 14 - Time Out from all 3 RMs..
+INFO - Mon Apr 13 14:58:40 EDT 2020 - Add event - MTLM1155 - Seminars - MTLE010820 - 14 - Success| 14
+INFO - Mon Apr 13 15:00:35 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM015820 - 21 - Success| 21
+INFO - Mon Apr 13 17:46:29 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM015820 - 21 - Success| 21
+INFO - Mon Apr 13 17:47:22 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM015820 - 22 - Success| 22
+INFO - Mon Apr 13 17:48:38 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM015820 - 23 - Success| 23
+INFO - Mon Apr 13 17:50:49 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM015820 - 25 - Success| 25
+INFO - Mon Apr 13 17:56:39 EDT 2020 - Remove event - MTLM1155 - Seminars - MTLM015820 - Time Out from all 3 RMs..
+INFO - Mon Apr 13 18:01:10 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM150820 - 135 - Success| 135
+INFO - Mon Apr 13 18:03:19 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 150 - Time Out from all 3 RMs..
+INFO - Mon Apr 13 18:34:46 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 150 - Time Out from all 3 RMs..
+INFO - Mon Apr 13 18:35:51 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 150 - Success| 150
+INFO - Mon Apr 13 18:36:48 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 151 - Success| 151
+INFO - Mon Apr 13 18:46:34 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 151 - Success| 151
+INFO - Mon Apr 13 18:47:12 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 152 - Success| 152
+INFO - Mon Apr 13 18:54:16 EDT 2020 - Add event - MTLM1155 - Seminars - MTLM160820 - 153 - Success| 153
+INFO - Tue Apr 14 12:42:15 EDT 2020 - Add event - MTLM1155 - Seminar - MTLM150820 - 10 - Success| 10
+INFO - Tue Apr 14 12:46:57 EDT 2020 - Add event - MTLM1155 - Seminar - MTLM150820 - 11 - Success| 11
+INFO - Tue Apr 14 12:48:55 EDT 2020 - Add event - MTLM1155 - Seminar - MTLM150820 - 12 - Failure| 14

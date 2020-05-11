@@ -1,0 +1,18 @@
+INFO - Tue Mar 17 18:00:01 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM020620 - 55 - Success
+INFO - Tue Mar 17 18:01:00 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM100720 - 66 - Success
+INFO - Tue Mar 17 18:22:25 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM100720 - 66 - Success
+INFO - Wed Mar 18 20:22:43 EDT 2020 - Add event - SHEM9988 - Conferences - SHEM051220 - 88 - Success
+INFO - Wed Mar 18 20:23:11 EDT 2020 - Add event - SHEM9988 - Trade Shows - SHEM250720 - 15 - Success
+INFO - Thu Mar 19 20:08:55 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM240920 - 14 - PROCESS_CRASH|RM03|RM01|RM02
+INFO - Wed Mar 25 17:02:52 EDT 2020 - Add event - SHEM9988 - Seminar - SHEM290620 - 25 - Failure
+INFO - Thu Mar 26 22:59:38 EDT 2020 - Add event - SHEM9988 - Seminars - SHEA151120 - 150 - Success
+INFO - Fri Mar 27 11:53:17 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM151020 - 55 - Success
+INFO - Fri Mar 27 18:01:17 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM151020 - 55 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM011120 - 15 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM021120 - 16 - Success
+INFO - Sat Mar 28 01:17:37 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM031120 - 17 - Success
+INFO - Wed Apr 01 21:07:20 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM011120 - 15 - Success
+INFO - Thu Apr 02 10:50:50 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM011120 - 15 - Time Out from all 3 RMs..
+INFO - Thu Apr 02 11:15:10 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM011120 - 15 - Time Out from all 3 RMs..
+INFO - Thu Apr 02 19:23:14 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM300820 - 14 - Success
+INFO - Thu Apr 02 19:26:24 EDT 2020 - Add event - SHEM9988 - Seminars - SHEM300820 - 14 - Success

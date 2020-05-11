@@ -1,0 +1,9 @@
+INFO - Thu Apr 23 15:58:34 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, MTLM030920=15}
+INFO - Thu Apr 23 16:45:44 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=4, QUEM020920=10}
+INFO - Thu Apr 23 16:58:39 EDT 2020 - List event Availability- MTLM1299 - Seminar - {SHEM150820=14, SHEM160820=20}
+INFO - Thu Apr 23 17:06:19 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, QUEM020920=10, SHEM030920=19}
+INFO - Thu Apr 23 17:09:00 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, QUEM020920=9, SHEM030920=19}
+INFO - Thu Apr 23 17:26:51 EDT 2020 - List event Availability- MTLM1299 - Seminar - Time Out from all 3 RMs..
+INFO - Fri Apr 24 17:50:34 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, QUEM020920=9, SHEM030920=15}
+INFO - Fri Apr 24 18:03:37 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, QUEM020920=9, SHEM030920=15}
+INFO - Fri Apr 24 18:06:26 EDT 2020 - List event Availability- MTLM1299 - Seminar - {MTLM010920=5, QUEM020920=9, SHEM030920=15}

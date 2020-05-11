@@ -1,0 +1,24 @@
+INFO - Mon Apr 20 18:34:33 EDT 2020 - Add event - QUEM1255 - Seminar - QUEA060920 - 11 - Time Out from all 3 RMs..
+INFO - Mon Apr 20 19:04:32 EDT 2020 - Add event - QUEM1255 - Seminar - QUEA060920 - 11 - Success| 11
+INFO - Thu Apr 23 16:39:37 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Thu Apr 23 16:43:27 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Thu Apr 23 17:03:37 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Thu Apr 23 17:17:55 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Thu Apr 23 17:22:17 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 15:12:04 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:11:37 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:21:08 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:24:56 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:28:16 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:35:05 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:40:03 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 16:52:36 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 17:40:46 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 18:41:27 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 19:11:55 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 20:06:55 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Fri Apr 24 23:27:13 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Sat Apr 25 13:26:45 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Sat Apr 25 13:43:27 EDT 2020 - Add event - QUEM1255 - Seminar - QUEM020920 - 10 - Success| 10
+INFO - Sat Apr 25 16:59:06 EDT 2020 - Add event - QUEM1255 - Seminar - QUEA030920 - 7 - Success| 7
+INFO - Sat Apr 25 16:59:06 EDT 2020 - Add event - QUEM1255 - Seminar - QUEE040920 - 10 - Success| 10
