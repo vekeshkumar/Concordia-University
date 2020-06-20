@@ -1,0 +1,83 @@
+COMP6411 
+Assignment -1:
+Environment : 3.x and use only with Python standard distribution.
+Things to do :
+Small database server.
+Construct Client/Server Application.
+One Client Program -> access the DB.(No Concurrency or Thread Control)
+One-to-One Communiccation
+
+
+socketserver class  with 9999 port for the DB server.
+Server has to 
+1) Listening to the client requests.
+
+2) Load the database to provide access to the data.The data base will be loaded from a simple, plain text disk file
+called data.txt.(Customer Records)
+
+A customer record
+will be a tuple with the following format
+(name, age, address, phone#)
+
+To record this information on disk, you will store one record per line, and separate each
+field with a bar symbol (‘|’).
+ A simple 3 record database might look like this
+John|43|123 Apple street|514 428-3452
+Katya| 26|49 Queen Mary Road|514 234-7654
+Ahmad|91|1888 Pepper Lane|
+ Name is Mandatory , if its not there we can skip the record. 
+ Other informations can be null.
+ Basic error checking needs to be checked.
+ In Dictionary name is the key and other details are values
+
+20 Records to be present.
+
+3) Load data set into memory.(Db file should be stored in the same folder of the  server application).
+Each tuple will be stored in an in-memory data structure. Use Dictionary  structure.
+Look up customers by Name.
+
+
+
+
+
+
+How it should be :
+Python DB Menu
+1. Find customer
+2. Add customer
+3. Delete customer
+4. Update customer age
+5. Update customer address
+6. Update customer phone
+7. Print report
+8. Exit
+Select:
+
+
+
+socket API function :
+socket()
+bind()
+listen()
+accept()
+connect()
+connect_ex()
+send()
+recv()
+close()
+
+
+
+Conditions :
+Pipe symbol should be present to make it valid
+Separated should be present
+
+Skip out the invalid record from data.txt file
+If Invalid record is given , give out error message
+
+
+1.Just load the data.txt file to in-memory architetcture
+
+Criteria's
+Name Should be unique and name cannot be blank.
+Other fields can be blank, with | if its not der its not valid
