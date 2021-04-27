@@ -1,0 +1,36 @@
+    /*CSS style template for the image grid from W3schools*/
+* {
+    box-sizing: border-box;
+}
+
+h1 { color: #d54d7b; font-family: "Great Vibes", cursive; font-size: 9vw; line-height: 300px; font-weight: normal; margin-bottom: 0px; margin-top: 10px; text-align: center; text-shadow: 0 1px 1px #fff; }
+
+body {
+    margin: 0;
+    font-family: Arial;
+}
+
+/* The grid: Four equal columns that floats next to each other */
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Style the images inside the grid */
+.column img {
+    opacity: 0.8; 
+    cursor: pointer; 
+    width: 100%;
+}
+
+.column img:hover {
+    opacity: 1;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}

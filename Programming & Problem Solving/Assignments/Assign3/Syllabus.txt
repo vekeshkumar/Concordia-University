@@ -1,0 +1,39 @@
+COMP108	Computer_Science_Industrial_Experience_Reflective_Learning_I	3
+P
+C
+
+COMP201	Introduction_to_Computing	3
+P	MATH201
+C
+
+COMP208	Computer_Science_Industrial_Experience_Reflective_Learning_II	3
+P	COMP108
+C
+
+COMP218	Fundamentals_of_Programming	3
+P	MATH201
+C	 
+
+COMP248	Object-Oriented_Programming_I	3.5
+P	MATH204
+C	COMP201
+
+COMP228	System_Hardware	3
+P	COMP248
+C	
+
+COMP249	Object-Oriented_Programming_II	3.5
+P	COMP248
+C	
+
+COMP371	Computer_Graphics	4
+P	COMP248
+C	COMP249
+
+COMP376	Introduction_to_Game_Development	4
+P	COMP371
+C	COMP371
+
+COMP228	System_Hardware	3
+P	COMP248
+C	
